@@ -1,11 +1,12 @@
 # Table of contents
 
 * [Welcome](README.md)
-* [Untitled](untitled.md)
 
 ## Setup
 
-* [Untitled](setup/untitled.md)
+* [Mac](setup/untitled.md)
+* [Linux](setup/linux.md)
+* [Windows](setup/windows.md)
 
 ## Use Dockware
 
