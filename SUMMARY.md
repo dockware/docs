@@ -4,9 +4,8 @@
 
 ## Setup
 
-* [Mac](setup/untitled.md)
-* [Linux](setup/linux.md)
-* [Windows](setup/windows.md)
+* [Docker Setup](setup/untitled.md)
+* [Performance Tweaks](setup/windows.md)
 
 ## Use Dockware
 
