@@ -16,6 +16,7 @@
 * [Adminer](features/adminer.md)
 * [Mailcatcher](features/mailcatcher.md)
 * [Pimp my Log](features/pimp-my-log.md)
+* [Switch PHP Version](features/switch-php-version.md)
 
 ## Development
 
