@@ -17,6 +17,10 @@
 * [Mailcatcher](features/mailcatcher.md)
 * [Pimp my Log](features/pimp-my-log.md)
 * [Switch PHP Version](features/switch-php-version.md)
+* [Tideways Profiling](features/tideways.md)
+* [Filebeat](features/filebeat.md)
+* [MySQL Users](features/mysql-users.md)
+* [Shopware Currency](features/shopware-currency.md)
 
 ## Development
 

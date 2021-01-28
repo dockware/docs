@@ -1,0 +1,2 @@
+# Shopware Currency
+
