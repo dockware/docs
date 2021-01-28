@@ -13,7 +13,9 @@
 
 ## Features
 
-* [Untitled](features/untitled.md)
+* [Adminer](features/adminer.md)
+* [Mailcatcher](features/mailcatcher.md)
+* [Pimp my Log](features/pimp-my-log.md)
 
 ## Development
 
