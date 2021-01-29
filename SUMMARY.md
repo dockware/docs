@@ -71,3 +71,10 @@
 * [Chrome Problems](faq/chrome-problems.md)
 * [Shopware 5 Support](faq/shopware-5-support.md)
 
+## Additional Links <a id="additional"></a>
+
+* [Imprint](https://www.dasistweb.de/en/imprint)
+* [Founders](additional/founders.md)
+* [Dockware website](https://dockware.io/)
+* [Dockware in Shopware Slack](https://shopwarecommunity.slack.com/archives/C014X8HE8U8)
+
