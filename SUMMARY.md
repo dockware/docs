@@ -4,12 +4,12 @@
 
 ## Setup
 
-* [Docker Setup](setup/untitled.md)
-* [Performance Tweaks](setup/windows.md)
+* [Docker Setup](setup/docker-setup.md)
+* [Performance Tweaks](setup/performance-tweaks.md)
 
 ## Use Dockware
 
-* [First Run](use-dockware/untitled.md)
+* [First Run](use-dockware/first-run.md)
 * [Update Dockware](use-dockware/update-dockware.md)
 * [Advanced Run](use-dockware/advanced-run.md)
 * [Symfony or Shopware 5](use-dockware/symfony-or-shopware-5.md)
@@ -22,7 +22,7 @@
 * [Mailcatcher](features/mailcatcher.md)
 * [Pimp my Log](features/pimp-my-log.md)
 * [Switch PHP Version](features/switch-php-version.md)
-* [Tideways Profiling](features/tideways.md)
+* [Tideways Profiling](features/tideways-profiling.md)
 * [Filebeat](features/filebeat.md)
 * [SSH Users](features/ssh-users.md)
 * [MySQL Users](features/mysql-users.md)
@@ -41,7 +41,7 @@
 
 ## Contribute
 
-* [Intro](contribute/untitled.md)
+* [Intro](contribute/intro.md)
 * [Setup Github Version](contribute/setup-github-version.md)
 * [Create Feature](contribute/create-feature.md)
 * [Code Styles](contribute/code-styles.md)
@@ -50,7 +50,6 @@
 
 ## Tips & Tricks
 
-* [Untitled](tips-and-tricks/untitled.md)
 * [Performance on Mac](tips-and-tricks/performance-on-mac.md)
 * [Persisting Data](tips-and-tricks/persisting-data.md)
 * [Housekeeping](tips-and-tricks/housekeeping.md)
@@ -58,7 +57,6 @@
 
 ## FAQ
 
-* [Intro](faq/intro.md)
 * [Default Credentials](faq/default-credentials.md)
 * [Sequel Pro](faq/sequel-pro.md)
 * [Dockware and other images](faq/dockware-and-other-images.md)
