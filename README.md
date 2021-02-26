@@ -28,8 +28,10 @@ That's super easy. Just make a Pull Request on our [documentation GitHub Repo](h
 **dockware is helpful for you?**
 
 {% hint style="success" %}
-Then think about sponsor it with [Github sponsoring](https://github.com/sponsors/dockware) 💜
+Then think about to sponsor it with [Github sponsoring](https://github.com/sponsors/dockware) 💜
 {% endhint %}
+
+
 
 
 
