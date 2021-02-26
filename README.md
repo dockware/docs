@@ -2,7 +2,7 @@
 description: 'dockware, the fast and simple way to develop with shopware and symfony.'
 ---
 
-# Welcome
+# Welcome to the dockware doc's
 
 Welcome to the dockware documentation!
 
