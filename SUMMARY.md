@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome to the dockware doc's](README.md)
+* [dockware doc's](README.md)
 
 ## Setup
 

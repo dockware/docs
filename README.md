@@ -2,7 +2,7 @@
 description: 'dockware, the fast and simple way to develop with shopware and symfony.'
 ---
 
-# Welcome to the dockware doc's
+# dockware doc's
 
 Welcome to the dockware documentation!
 
@@ -24,6 +24,12 @@ If you have a issue or a feature Request please create it on the official [dockw
 
 **What if i like to contribute to this documentation?**  
 That's super easy. Just make a Pull Request on our [documentation GitHub Repo](https://github.com/dockware/docs).
+
+**dockware is helpful for you?**
+
+{% hint style="success" %}
+Then think about sponsor it with [Github sponsoring](https://github.com/sponsors/dockware) 💜
+{% endhint %}
 
 
 
