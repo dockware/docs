@@ -23,9 +23,9 @@ An easy starting point for that is to use our "dev" example on Github. [https://
 This step has only to be done once!
 {% endhint %}
 
-1. Start the container with "docker-compose up -d"
+1. Start the container with `docker-compose up -d`
 2. Create a folder like "src" on your host \(maybe in the same directory as your compose...\)
-3. Initially copy the dockware files to your host with: "docker cp shop:/var/www/html/\* ./src
+3. Initially copy the dockware files to your host with: `docker cp shop:/var/www/html/. ./src`
 
 This will download all files from the Shopware version within the dockware image into your source folder on your host.
 
