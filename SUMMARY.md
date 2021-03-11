@@ -53,6 +53,7 @@
 * [Performance on Mac](tips-and-tricks/performance-on-mac.md)
 * [Persisting Data](tips-and-tricks/persisting-data.md)
 * [Housekeeping](tips-and-tricks/housekeeping.md)
+* [How to use Bind-Mounting](tips-and-tricks/how-to-use-bind-mounting.md)
 * [Security](tips-and-tricks/security.md)
 
 ## FAQ
