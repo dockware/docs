@@ -29,6 +29,7 @@ This step has only to be done once!
 **For Linux users only!**
 
 1. Make sure your host user is in the `docker` and `www-data` groups \(check with `groups` command\)
+2. Restart your pc to make sure the permissions get granted
 {% endhint %}
 
 1. Create a folder like `src` on your host \(maybe in the same directory as your compose...\)
