@@ -13,6 +13,7 @@ You will find the available variables for your image on the [Docker Hub](https:/
 | PHP | PHP\_VERSION | PHP 7.4 | Switch to any of the installed PHP versions: 8.0, 7.4, 7.3, 7.2 |
 | APACHE | APACHE\_DOCROOT | /var/www/html/public | Sets the default DocRoot of Apache |
 | SHOPWARE | SW\_CURRENCY | not-set | Switch to a different default currency for the system, like GBP. This will be used in the administration. |
+| COMPOSER | COMPOSER\_VERSION | not-set | Let's you switch between composer 1 and 2. |
 
 ### Users
 
