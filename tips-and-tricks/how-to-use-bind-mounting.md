@@ -47,7 +47,7 @@ This step has only to be done once!
 
 ### 4. Enable Bind-Mounting
 
-Now you have to modify your docker-compose.yml and enable the bind-mounting.
+Now you have to modify your `docker-compose.yml` and enable the bind-mounting.
 
 {% code title="docker-compose.yml" %}
 ```text
