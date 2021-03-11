@@ -13,6 +13,8 @@ Thus all related things, including issues such as file permission problems do no
 
 Let's get started with our bind-mount setup.
 
+
+
 ### 1. Prepare a clean project 
 
 An easy starting point for that is to use our "dev" example on Github. [https://github.com/dockware/examples/tree/master/basic-dev-setup](https://github.com/dockware/examples/tree/master/basic-dev-setup)
@@ -23,13 +25,27 @@ An easy starting point for that is to use our "dev" example on Github. [https://
 This step has only to be done once!
 {% endhint %}
 
-1. Start the container with `docker-compose up -d`
-2. Create a folder like "src" on your host \(maybe in the same directory as your compose...\)
-3. Initially copy the dockware files to your host with: `docker cp shop:/var/www/html/. ./src`
+{% hint style="warning" %}
+**For Linux Users only!**
 
-This will download all files from the Shopware version within the dockware image into your source folder on your host.
+1. Make sure your host user is in the `docker` and `www-data` groups \(check with `groups` command\)
+{% endhint %}
 
-### 3. Enable Bind-Mounting
+1. Create a folder like `src` on your host \(maybe in the same directory as your compose...\)
+2. Make sure your host `src` directory is empty
+3. Make sure the `volumes` are **commented out** in the `docker-compose.yml`
+4. Start the container with `docker-compose up -d`
+5. Initially copy the dockware files to your host with: `docker cp shop:/var/www/html/. ./src`
+6. Move the content around \(`cd src && mv html/* . && mv html/.env . && rmdir html && cd ..` \)
+
+{% hint style="warning" %}
+**For Linux users only!**
+
+1. Set permissions \(`chgrp -R www-data src` \) - possible that you need sudo for this
+2. Set write permissions for cache/log \(`chmod a+w src/var/*` \)
+{% endhint %}
+
+### 4. Enable Bind-Mounting
 
 Now you have to modify your docker-compose.yml and enable the bind-mounting.
 
