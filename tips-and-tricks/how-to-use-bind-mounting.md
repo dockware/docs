@@ -26,7 +26,7 @@ This step has only to be done once!
 {% endhint %}
 
 {% hint style="warning" %}
-**For Linux Users only!**
+**For Linux users only!**
 
 1. Make sure your host user is in the `docker` and `www-data` groups \(check with `groups` command\)
 {% endhint %}
