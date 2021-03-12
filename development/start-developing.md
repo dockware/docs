@@ -69,7 +69,7 @@ docker-compose up -d
 Great, you should now have a running Shopware 6 on your local machine.  
 The prepared application environment is **DEV** and should already contain everything you need.  
   
-You can immediately access the database with the exposed port **3306** \(see [FAQ]() for more\).  
+You can immediately access the database with the exposed port **3306** \(see [FAQ](../faq/sequel-pro.md) for more\).  
   
 Now it's time to download the current version of Shopware to your host.  
 This is required to have code completion and IntelliSense right in your IDE, and thus we need it.  
@@ -85,7 +85,13 @@ docker cp shopware:/var/www/html/. ./src
 
 Open the **src** folder with your preferred IDE and wait until finished loading.  
 Then add a new SFTP connection to your container. We recommend Automatic-Upload if possible.  
-If you need the SSH/SFTP credentials, please see the [FAQ]() section for details.  
+If you need the SSH/SFTP credentials, please see the [FAQ](../faq/default-credentials.md) section for details.
+
+{% hint style="info" %}
+Since docker engine is getting better every month, you now can also use [bind-mount](../tips-and-tricks/how-to-use-bind-mounting.md) for more comfort. 
+{% endhint %}
+
+  
   
 If you have PhpStorm, we also recommend enabling the **Symfony Plugin** for better code completion.
 
