@@ -50,6 +50,8 @@ This step has only to be done once!
 
 Now you have to modify your `docker-compose.yml` and enable the bind-mounting.
 
+You can find a full docker-compose example here [https://github.com/dockware/examples/tree/master/bind-mount](https://github.com/dockware/examples/tree/master/bind-mount)
+
 {% code title="docker-compose.yml" %}
 ```text
 ...
