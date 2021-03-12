@@ -17,7 +17,7 @@ Let's get started with our bind-mount setup.
 
 ### 1. Prepare a clean project 
 
-An easy starting point for that is to use our "dev" example on Github. [https://github.com/dockware/examples/tree/master/basic-dev-setup](https://github.com/dockware/examples/tree/master/basic-dev-setup)
+An easy starting point for that is to use our "dev" example on Github. [https://github.com/dockware/examples/tree/master/bind-mount](https://github.com/dockware/examples/tree/master/bind-mount)
 
 ### 2. First Start with Dockware files \(no bind-mount\)
 
