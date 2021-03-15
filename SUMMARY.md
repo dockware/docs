@@ -1,6 +1,7 @@
 # Table of contents
 
 * [dockware doc's](README.md)
+* [News](news.md)
 
 ## Setup
 
