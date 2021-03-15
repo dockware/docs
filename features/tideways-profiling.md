@@ -1,21 +1,16 @@
 # Tideways Profiling
 
-
-
 Want to take a deep look into your code performance?  
   
-Then use the PHP profiler [tideways](https://tideways.com/). You only need to do 2 things:  
-  
-
+Then use the PHP profiler [tideways](https://tideways.com/). You only need to do 2 things:
 
 1. Create a tideways account
 2. Configure your API key in the docker environment
 
-| Variable | Default Value | Description |
-| :--- | :--- | :--- |
-| TIDEWAYS\_KEY |  | Required |
-| TIDEWAYS\_ENV | production | Set an environment variable to seperate the profiles in tideways. The default is production, as this is in the flex plan of tidwayes the only available environment. |
-| TIDEWAYS\_SERVICE | web | Use this differe between different components/services of your project such as example shop, api etc. |
+Now just edit the environment variables of your container and fill them with your Tideways credentials.  
+Your container should automatically configure and launch tideways for you.
+
+Here's a list of available [Environment Variables](../development/environment-variables.md)
 
 ```yaml
 dockware:

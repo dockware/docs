@@ -1,10 +1,7 @@
 # Start Developing
 
-
-
 We start by preparing our environment.  
 To develop new plugins, themes and features, in the most efficient way, we recommend a few things.  
-  
 
 
 * **Docker Compose** This helps you to create a good architecture and blue prints of your setup. 
