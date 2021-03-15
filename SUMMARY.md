@@ -39,6 +39,7 @@
 * [Environment Variables](development/environment-variables.md)
 * [Update Shopware](development/update-shopware.md)
 * [Dockware Essentials](development/dockware-essentials.md)
+* [Custom Images](development/custom-images.md)
 
 ## Contribute
 
