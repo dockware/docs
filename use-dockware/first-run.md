@@ -71,8 +71,8 @@ https://www.shopware.com/de/changelog/
 ```
 
 {% hint style="warning" %}
-Attention! If you use a https connection and chrome as browser, it might block your connection to https://localhost.  
-This can be easily changed by following [these steps](../faq/chrome-problems.md) from our FAQ.
+Attention!   
+If you use a https connection and chrome as browser, it might block your connection to https://localhost. This can be easily changed by following [these steps](../faq/chrome-problems.md) from our FAQ.
 {% endhint %}
 
 There are also other ways to start a Shopware 6 shop.
@@ -88,6 +88,14 @@ docker run --rm -p 80:80 dockware/play:6.1.3
 ```bash
 docker run --rm -p 80:80 --env PHP_VERSION=7.2 dockware/play:latest
 ```
+
+
+
+{% hint style="success" %}
+If you are looking for passwords and default credentials of Shopware and dockware, please take a look at this page: [Default Credentials](default-credentials.md)
+{% endhint %}
+
+### 
 
 ### Tutorial Video available
 

@@ -43,5 +43,9 @@ docker logs -f shopware
 You can also find some other and deeper examples in our [dockware examples](https://github.com/dockware/examples) Git Repo
 {% endhint %}
 
+{% hint style="success" %}
+If you are looking for passwords and default credentials of Shopware and dockware, please take a look at this page: [Default Credentials](default-credentials.md)
+{% endhint %}
 
+### 
 

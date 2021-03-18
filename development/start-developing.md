@@ -82,7 +82,7 @@ docker cp shopware:/var/www/html/. ./src
 
 Open the **src** folder with your preferred IDE and wait until finished loading.  
 Then add a new SFTP connection to your container. We recommend Automatic-Upload if possible.  
-If you need the SSH/SFTP credentials, please see the [FAQ](../faq/default-credentials.md) section for details.
+If you need the SSH/SFTP credentials, please see the [FAQ](../use-dockware/default-credentials.md) section for details.
 
 {% hint style="info" %}
 Since docker engine is getting better every month, you now can also use [bind-mount](../tips-and-tricks/how-to-use-bind-mounting.md) for more comfort. 

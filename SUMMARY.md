@@ -13,6 +13,7 @@
 * [First Run](use-dockware/first-run.md)
 * [Update Dockware](use-dockware/update-dockware.md)
 * [Advanced Run](use-dockware/advanced-run.md)
+* [Default Credentials](use-dockware/default-credentials.md)
 * [Symfony or Shopware 5](use-dockware/symfony-or-shopware-5.md)
 * [Changelog](use-dockware/changelog.md)
 
@@ -60,7 +61,6 @@
 
 ## FAQ
 
-* [Default Credentials](faq/default-credentials.md)
 * [Sequel Pro](faq/sequel-pro.md)
 * [Dockware and other images](faq/dockware-and-other-images.md)
 * [Scripts](faq/scripts.md)
