@@ -5,6 +5,10 @@ To develop new plugins, themes and features, in the most efficient way, we recom
   
 
 
+{% hint style="info" %}
+This is only required when working with sftp. You can see how to work with [bind mounting here](../tips-and-tricks/how-to-use-bind-mounting.md).
+{% endhint %}
+
 **Switching Branches?**
 
 Now that you've completed your first steps in developing with dockware, you might ask yourself "What if I switch branches?" or "What if I just want to restart my container?"  
