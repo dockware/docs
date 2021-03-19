@@ -40,6 +40,7 @@
 * [Environment Variables](development/environment-variables.md)
 * [Update Shopware](development/update-shopware.md)
 * [Dockware Essentials](development/dockware-essentials.md)
+* [Custom Domains](development/custom-domains.md)
 * [Custom Images](development/custom-images.md)
 
 ## Contribute
@@ -55,7 +56,6 @@
 
 * [Performance on Mac](tips-and-tricks/performance-on-mac.md)
 * [Persisting Data](tips-and-tricks/persisting-data.md)
-* [Custom Domains](tips-and-tricks/custom-domains.md)
 * [Housekeeping](tips-and-tricks/housekeeping.md)
 * [How to use Bind-Mounting](tips-and-tricks/how-to-use-bind-mounting.md)
 * [Security](tips-and-tricks/security.md)
