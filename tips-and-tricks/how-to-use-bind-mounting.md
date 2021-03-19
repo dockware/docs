@@ -30,7 +30,7 @@ And only if you use **dockware:dev** which provides already an installed shopwar
 {% endhint %}
 
 {% hint style="warning" %}
-**For Linux users only!**
+**For Linux users only! \(To be executed on your HOST, not docker\)**
 
 1. Make sure your host user is in the `docker` and `www-data` groups \(check with `groups` command\)
 2. Restart your pc to make sure the permissions get granted
@@ -47,7 +47,7 @@ This steps only required  if you wan't to use the shopware version provided by y
 ### 3. Set Permissions
 
 {% hint style="warning" %}
-**For Linux users only!**
+**For Linux users only!  \(To be executed on your HOST, not docker\)**
 
 1. Set permissions \(`chgrp -R www-data src` \) - possible that you need sudo for this
 2. Set write permissions for cache/log \(`chmod a+w src/var/*` \)
