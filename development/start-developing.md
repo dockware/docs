@@ -67,11 +67,11 @@ Great, you should now have a running Shopware 6 on your local machine.
 The prepared application environment is **DEV** and should already contain everything you need.  
   
 You can immediately access the database with the exposed port **3306** \(see [FAQ](../faq/sequel-pro.md) for more\).  
-  
+
+
 Now it's time to download the current version of Shopware to your host.  
 This is required to have code completion and IntelliSense right in your IDE, and thus we need it.  
-  
-If you want to know why we don't use bind-mounting, please scroll down to the [Performance on MAC](../tips-and-tricks/performance-on-mac.md) section.
+
 
 ```bash
 mkdir -p ./src
@@ -80,13 +80,17 @@ docker cp shopware:/var/www/html/. ./src
 
 **3. Prepare IDE**
 
+{% hint style="success" %}
+Since january 2021 and the docker engine always getting better we recommend to use [bind mounting](../tips-and-tricks/how-to-use-bind-mounting.md) as it is much more comfortable and easier. Only if you have performance problems with it you can also use our old standard way ftp, this will always work.
+{% endhint %}
+
+
+
+**Only if you wan't to use sftp**, otherwise see our [bind-mouting](../tips-and-tricks/how-to-use-bind-mounting.md) docs.  
+  
 Open the **src** folder with your preferred IDE and wait until finished loading.  
 Then add a new SFTP connection to your container. We recommend Automatic-Upload if possible.  
 If you need the SSH/SFTP credentials, please see the [FAQ](../use-dockware/default-credentials.md) section for details.
-
-{% hint style="info" %}
-Since docker engine is getting better every month, you now can also use [bind-mount](../tips-and-tricks/how-to-use-bind-mounting.md) for more comfort. 
-{% endhint %}
 
   
   
