@@ -41,6 +41,10 @@ As Xdebug will slow down your dev environment for every request and also for eac
 {% endhint %}
 
 In our global makefile in /var/www we provide the commands for instantly enabling and disabling Xdebug.  
+  
+`cd /var/www && make xdebug-on`
+
+`cd /var/www && make xdebug-off`  
 
 
 **Configuration**
