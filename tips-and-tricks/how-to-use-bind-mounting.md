@@ -33,7 +33,7 @@ This step has only to be done once!
 {% endhint %}
 
 1. Create a folder like `src` on your host \(maybe in the same directory as your compose...\)
-2. Make sure your host `src` directory is empty
+2. Make sure your host `src` directory is empty \(_of course only if you wan't to use the shopware version provided by your dockware:dev container. If you wan't to use your own project/installation it's totally fine that the folder is not empty_\)
 3. Make sure the `volumes` are **commented out** in the `docker-compose.yml`
 4. Start the container with `docker-compose up -d`
 5. Initially copy the dockware files to your host with: `docker cp shop:/var/www/html/. ./src`
