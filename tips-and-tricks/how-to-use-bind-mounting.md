@@ -19,10 +19,14 @@ Let's get started with our bind-mount setup.
 
 An easy starting point for that is to use our "dev" example on Github. [https://github.com/dockware/examples/tree/master/bind-mount](https://github.com/dockware/examples/tree/master/bind-mount)
 
+1. Create a folder like `src` on your host \(maybe in the same directory as your docker-compose...\)
+
 ### 2. First Start with Dockware files \(no bind-mount\)
 
 {% hint style="info" %}
-This step has only to be done once!
+This step has only to be done once! 
+
+And only if you use **dockware:dev** which provides already an installed shopware version. If you wan't to use your own project/installation you can go to step 3.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -32,12 +36,15 @@ This step has only to be done once!
 2. Restart your pc to make sure the permissions get granted
 {% endhint %}
 
-1. Create a folder like `src` on your host \(maybe in the same directory as your compose...\)
-2. Make sure your host `src` directory is empty \(_of course only if you wan't to use the shopware version provided by your dockware:dev container. If you wan't to use your own project/installation it's totally fine that the folder is not empty_\)
-3. Make sure the `volumes` are **commented out** in the `docker-compose.yml`
-4. Start the container with `docker-compose up -d`
-5. Initially copy the dockware files to your host with: `docker cp shop:/var/www/html/. ./src`
-6. Move the content around \(`cd src && mv html/* . && mv html/.env . && rmdir html && cd ..` \)
+This steps only required  if you wan't to use the shopware version provided by your **dockware:dev** container. Not If you wan't to use your own project/installation.
+
+1. Make sure your host `src` directory is empty 
+2. Make sure the `volumes` are **commented out** in the `docker-compose.yml` 
+3. Start the container with `docker-compose up -d`
+4. Initially copy the dockware files to your host with: `docker cp shop:/var/www/html/. ./src`
+5. Move the content around \(`cd src && mv html/* . && mv html/.env . && rmdir html && cd ..` \)
+
+### 3. Set Permissions
 
 {% hint style="warning" %}
 **For Linux users only!**
