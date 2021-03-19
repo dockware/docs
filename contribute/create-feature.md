@@ -20,7 +20,7 @@ Great, we are up to date. Now just start a new feature branch that will be used 
 
 {% code title="ON HOST" %}
 ```text
-git checkout -b my-new-feature origin/master
+git checkout -b my-new-feature origin/trunk
 ```
 {% endcode %}
 
