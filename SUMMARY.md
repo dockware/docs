@@ -64,7 +64,7 @@
 
 * [Sequel Pro](faq/sequel-pro.md)
 * [Dockware and other images](faq/dockware-and-other-images.md)
-* [Scripts](faq/scripts.md)
+* [Scripts \(PSH?\)](faq/scripts.md)
 * [Redis](faq/redis.md)
 * [MySQL failed](faq/mysql-failed.md)
 * [Elasticsearch](faq/elasticsearch.md)
