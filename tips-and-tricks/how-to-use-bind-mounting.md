@@ -24,7 +24,7 @@ An easy starting point for that is to use our "dev" example on Github. [https://
 ### 2. First Start with Dockware files \(no bind-mount\)
 
 {% hint style="info" %}
-This step has only to be done once! 
+This step has only to be done once per project! 
 
 And only if you use **dockware:dev** which provides already an installed shopware version. If you wan't to use your own project/installation you can go to step 3.
 {% endhint %}
