@@ -55,6 +55,7 @@
 
 * [Performance on Mac](tips-and-tricks/performance-on-mac.md)
 * [Persisting Data](tips-and-tricks/persisting-data.md)
+* [Custom Domains](tips-and-tricks/custom-domains.md)
 * [Housekeeping](tips-and-tricks/housekeeping.md)
 * [How to use Bind-Mounting](tips-and-tricks/how-to-use-bind-mounting.md)
 * [Security](tips-and-tricks/security.md)
@@ -64,7 +65,6 @@
 * [Sequel Pro](faq/sequel-pro.md)
 * [Dockware and other images](faq/dockware-and-other-images.md)
 * [Scripts](faq/scripts.md)
-* [Custom Domains](faq/custom-domains.md)
 * [Redis](faq/redis.md)
 * [MySQL failed](faq/mysql-failed.md)
 * [Elasticsearch](faq/elasticsearch.md)
