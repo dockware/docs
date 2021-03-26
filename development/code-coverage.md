@@ -10,7 +10,7 @@ Just follow these steps...
 
 ### Enable XDebug
 
-Make sure to enable XDebug either by using the [environment variable](../development/environment-variables.md) or by using the [makefile commands](scripts.md) in the folder `/var/www`
+Make sure to enable XDebug either by using the [environment variable](environment-variables.md) or by using the [makefile commands](../faq/scripts.md) in the folder `/var/www`
 
 ### Set Coverage Mode
 

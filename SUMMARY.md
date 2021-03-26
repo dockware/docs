@@ -42,6 +42,7 @@
 * [Dockware Essentials](development/dockware-essentials.md)
 * [Custom Domains](development/custom-domains.md)
 * [Custom Images](development/custom-images.md)
+* [Code Coverage](development/code-coverage.md)
 
 ## Contribute
 
@@ -71,7 +72,6 @@
 * [Windows Problems](faq/windows-problems.md)
 * [Chrome Problems](faq/chrome-problems.md)
 * [Shopware 5 Support](faq/shopware-5-support.md)
-* [Code Coverage](faq/code-coverage.md)
 
 ## Additional Links <a id="additional"></a>
 
