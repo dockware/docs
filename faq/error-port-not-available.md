@@ -29,6 +29,14 @@ docker rm -f (container_name)
 If no Docker container uses your port, it might be a native service or another application.  
 For example, a locally installed MySQL instance might already block our Port 3306, so Docker cannot use it.
 
+```bash
+#find port 80 usage on mac or linux
+sudo lsof -i -n -P | grep :80
+```
+
+exmaple output:  
+`com.docke 743 myusername 77u IPv6 0xa05aaf696f157485 0t0 TCP *:80 (LISTEN)`
+
 In that case, make sure to either disable these services, or maybe use a different port for your Docker container if possible.
 
 
