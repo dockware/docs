@@ -67,12 +67,12 @@
 * [Dockware and other images](faq/dockware-and-other-images.md)
 * [Scripts \(PSH?\)](faq/scripts.md)
 * [Redis](faq/redis.md)
+* [Error Port not available](faq/error-port-not-available.md)
 * [MySQL failed](faq/mysql-failed.md)
 * [Elasticsearch](faq/elasticsearch.md)
 * [Windows Problems](faq/windows-problems.md)
 * [Chrome Problems](faq/chrome-problems.md)
 * [Shopware 5 Support](faq/shopware-5-support.md)
-* [Error Port not available](faq/error-port-not-available.md)
 
 ## Additional Links <a id="additional"></a>
 
