@@ -24,6 +24,14 @@ Please try these things:
 
 #### Problems with log path via docker cp
 
+{% hint style="info" %}
+As this is a problem in combination with  
+1. docker  
+2. shopware file structure  
+3. Windows  
+we can't fix this for you, but we can work a bit around it
+{% endhint %}
+
   
 1. you have to open your terminal "cmd" with admin rights.  
 2. it's possible that also long paths does not work so there will be some folder which can't be downloaded. In this case we recommend to zip the content within the container, copy and unzip:  
