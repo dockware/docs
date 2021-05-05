@@ -45,6 +45,7 @@ services:
          - "22:22"
          - "8888:8888"
          - "9999:9999"
+         - "9998:9998"
       networks:
          - web
       environment:
