@@ -36,13 +36,8 @@ To stop the watcher, simply cancel the command / process.
 If you want to work on the storefront, please start the watcher command for this.  
 The storefront is available with this URL:  
   
-[http://localhost](http://localhost/)
-
-{% hint style="info" %}
-Since Shopware 6.4.0.0 you have to use the ports in addition as shopware default.
-
-[http://localhost](http://localhost/):9998
-{% endhint %}
+Shopware &lt; 6.4: [http://localhost](http://localhost)  
+Shopware &gt;= 6.4: [http://localhost:9998](http://localhost:9998)
 
   
 In case you are wondering why no additional port 9999/9998 is being used, the answer is pretty simple.  
