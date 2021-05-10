@@ -31,25 +31,23 @@ As soon as you modify any files in the administration and upload them to the con
   
 To stop the watcher, simply cancel the command / process.
 
+
+
 **Storefront Watcher**
 
-If you want to work on the storefront, please start the watcher command for this.  
-The storefront is available with this URL:  
-  
-Shopware &lt; 6.4: [http://localhost](http://localhost)  
-Shopware &gt;= 6.4: [http://localhost:9998](http://localhost:9998)
+The watcher for the storefront requires a few things to be set.  
+Follow this simple guide to get started.
 
-  
-In case you are wondering why no additional port 9999/9998 is being used, the answer is pretty simple.  
-If you take a close look at the XHR request, you'll see that only the assets like JavaScript files are being loaded from that port.  
-  
-One of the things in Shopware 6 that makes using the storefront watcher a bit harder, is that the trigger if port 9999 should be used or not, is done by using a request header entry.  
-  
-Most developers out there tend to just change that variable in the twig file.  
-  
-If you use our make commands, a new .htaccess file is being injected which automatically inserts that header for you.  
+1. **Ports** You need to expose the correct ports of your Docker container. Please expose the ports "**9999**" and "**9998**". The easiest way is to just expose them directly with "9999:9999" and "9998:9998" in your Docker setup. 
+2. **Start Make Command** Connect into your container and navigate to the folder "/var/www". This prepared makefile contains a command to start the storefront watcher. 
+3. **Open Browser** If the make command has finished, your watcher should be ready. Just open the URL in your browser and you should see that the CSS styles are loaded in a lazy way. That means it is working. Please keep in mind, that different Shopware versions require different URLs to be used. Shopware &lt; 6.4: [http://localhost](http://localhost) Shopware &gt;= 6.4: [http://localhost:9998](http://localhost:9998)
+
+The storefront watcher requires a special Request Header to be set.  
+We know this is annoying, so we've injected it automatically for you when starting the watcher using our make command.
+
+This command creates a new .htaccess file that automatically sets the required header.  
 So there's **no need to do anything on your side**! Just code!  
   
-Please consider, due to this, there's a separate "stop" command, to remove it again and get back to the original storefront without the watcher.  
+Please consider, due to this, there's a separate "stop" command in the make file to remove it again and get back to the original storefront without the watcher.  
 
 
