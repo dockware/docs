@@ -19,7 +19,7 @@ stop-watch-storefront          #Reverts everything back to normal operation
 watch-admin                    #Starts watcher for admin at http://localhost:8888
 ```
 
-**Administration Watcher**
+### **Administration Watcher**
 
 If you want to start the watcher for the administration, run the corresponding makefile command.  
 This takes a bit, but not that long.  
@@ -33,7 +33,7 @@ To stop the watcher, simply cancel the command / process.
 
 
 
-**Storefront Watcher**
+### **Storefront Watcher**
 
 The watcher for the storefront requires a few things to be set.  
 Follow this simple guide to get started.
