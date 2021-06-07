@@ -36,7 +36,7 @@ And only if you use **dockware:dev** which provides already an installed shopwar
 2. Restart your pc to make sure the permissions get granted
 {% endhint %}
 
-This steps only required  if you wan't to use the shopware version provided by your **dockware:dev** container. Not If you wan't to use your own project/installation.
+This steps only required  if you want to use the shopware version provided by your **dockware:dev** container. Not If you want to use your own project/installation.
 
 1. Make sure your host `src` directory is empty 
 2. Make sure the `volumes` are **commented out** in the `docker-compose.yml` 
