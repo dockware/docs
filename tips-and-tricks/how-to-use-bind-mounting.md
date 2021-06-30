@@ -26,7 +26,7 @@ An easy starting point for that is to use our "dev" example on Github. [https://
 {% hint style="info" %}
 This step has only to be done once per project! 
 
-And only if you use **dockware:dev** which provides already an installed shopware version. If you wan't to use your own project/installation you can go to step 3.
+And only if you use **dockware:dev** which provides already an installed shopware version. If you want to use your own project/installation you can go to step 3.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -36,7 +36,7 @@ And only if you use **dockware:dev** which provides already an installed shopwar
 2. Restart your pc to make sure the permissions get granted
 {% endhint %}
 
-This steps only required  if you wan't to use the shopware version provided by your **dockware:dev** container. Not If you wan't to use your own project/installation.
+This steps only required  if you want to use the shopware version provided by your **dockware:dev** container. Not If you want to use your own project/installation.
 
 1. Make sure your host `src` directory is empty 
 2. Make sure the `volumes` are **commented out** in the `docker-compose.yml` 
@@ -70,7 +70,7 @@ volumes:
 ```
 {% endcode %}
 
-### 4. Restart the container
+### 5. Restart the container
 
 Now restart your container and bind-mounting including all your Shopware files is ready to use.  
 You can now change files on your host, and it will be immediately shown without uploading it using SFTP
