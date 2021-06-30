@@ -39,11 +39,19 @@ networks:
 ```
 {% endcode %}
 
-To access the standalone MySQL instance, use this connection string:
+To access the standalone MySQL instance you need to set the **correct host**.
 
-{% code title="IN DOCKER" %}
+{% hint style="info" %}
+The host is the **name of your container** \(here -&gt; "db"\)
+{% endhint %}
+
+Different systems have different options to configure a database connection string.  
+In Shopware 6, it would be inside the **.env** file as DATABASE\_URL.  
+In Shopware 5, it is in the **config.php** file.
+
+{% code title="SHOPWARE 6 \(.env file inside docker\)" %}
 ```yaml
-mysql://shopuser:secret@db:3306/shopware
+DATABASE_URL=mysql://shopuser:secret@db:3306/shopware
 ```
 {% endcode %}
 
