@@ -1,25 +1,25 @@
-# How to use Bind-Mounting
+# Bind-Mounting
 
-Since the Docker engine is getting better the performance losses especially on Macs are not as big as they used to be when using bind-mounting in projects such as Symfony or Shopware.
+Since the Docker engine is getting better the performance losses especially on MACs are not as big as they used to be when using bind-mounting in projects such as Symfony or Shopware.
 
 Some of you know, that we like the SFTP way, as it's the best controllable and platform independent way to handle the project and file permissions.
 
 But we get often asked on how to work with dockware and bind-mounting, which is indeed possible.
 
 {% hint style="warning" %}
-Bind-Mounting is a plain Docker feature has nothing to do with dockware itself.  
-Thus all related things, including issues such as file permission problems do not have to do anything with dockware. Please keep that in mind when searching for answers to problems.
+Bind-Mounting is a plain Docker feature and has nothing to do with dockware itself.  
+Thus, all related things, including issues such as file permission problems do not have to do anything with dockware. Please keep that in mind when searching for answers to problems.
 {% endhint %}
 
 Let's get started with our bind-mount setup.
 
-## 1. Prepare a clean project
+## 1. Preparing a fresh and clean project
 
 An easy starting point for that is to use our "dev" example on Github. [https://github.com/dockware/examples/tree/master/bind-mount](https://github.com/dockware/examples/tree/master/bind-mount)
 
 1. Create a folder like `src` on your host \(maybe in the same directory as your docker-compose...\)
 
-## 2. First Start with Dockware files \(no bind-mount\)
+## 2. Initial Start with Dockware files \(no bind-mount\)
 
 {% hint style="info" %}
 This step has only to be done once per project!
