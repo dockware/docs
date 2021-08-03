@@ -1,6 +1,6 @@
 # Dockware and other images
 
- **Can i use dockware in combination with other images?**
+ **Can I use dockware in combination with other images?**
 
 Dockware is a Docker image like every other image. You can combine it with 3rd party services such as Redis, Elasticsearch, a separate MySQL, Percona or anything else.
 

@@ -3,9 +3,9 @@
 Shopware is Open Source!  
 And that means you can actively **support the community** and improve the platform for everyone around the world.  
   
-Still, sometimes it's a bit hard to setup everything and prepare your Pull Request on Github.  
+Still, sometimes it's a bit hard to set up everything and prepare your Pull Request on GitHub.  
   
-Thats why dockware **\#contribute** exists.  
+That's why dockware **\#contribute** exists.  
   
 It should help you to get the latest version of Shopware up and running in a minimum amount of time.
 

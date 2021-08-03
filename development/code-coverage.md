@@ -1,7 +1,7 @@
 # Code Coverage
 
 The latest version of Xdebug changed the way how code coverage works.  
-It's now depending on a specific **mode** that has to be set within the configuration of XDebug.
+It now depends on a specific **mode** that has to be set within the configuration of XDebug.
 
 Dockware delivers this mode in `debug`  and not in the required `coverage` mode.
 

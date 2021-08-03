@@ -2,7 +2,7 @@
 
 **Can't connect into container on Windows**
 
-If your terminal says that you don't have an tty or interactive terminal, you might want to prefix **winpty** which should work for you:
+If your terminal says that you don't have a tty or interactive terminal, you might want to prefix **winpty** which should work for you:
 
 {% code title="ON HOST" %}
 ```text
@@ -34,7 +34,7 @@ we can't fix this for you, but we can work a bit around it
 
   
 1. you have to open your terminal "cmd" with admin rights.  
-2. it's possible that also long paths does not work so there will be some folder which can't be downloaded. In this case we recommend to zip the content within the container, copy and unzip:  
+2. it's possible that also long paths does not work so there will be some folder which can't be downloaded. In this case we recommend zipping the content within the container, copy and unzip:  
 2.1 `docker exec -it CONTAINERNAME zip -r dockware.zip ./`  
 2.2 `docker cp CONTAINERNAME:/var/www/html/dockware.zip C:\my\path\dockware.zip`  
 3. right click zip file -&gt; unzip  

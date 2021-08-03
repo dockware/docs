@@ -25,19 +25,19 @@ shopware:
 
 **Eanble Xdebug in Chrome**
 
-Enable Xdebug in your chrome extension by clicking on the option "Debug".  
+Enable Xdebug in your Chrome extension by clicking on the option "Debug".  
 Now start your XDebug listener in your IDE and start debugging.
 
 ![enable Xdebug in Google Chrome](../.gitbook/assets/xdebug-enable-in-chrome.png)
 
 **Eanble Xdebug in API clients**
 
-You might want to debug your API requests or other requets in clients without the Xdebug Helper Tool. In this case you can simply append _`XDEBUG_SESSION_START=PHPSTORM`_ as a get parameter to your Url and it will also debug this request.
+You might want to debug your API requests or other requets in clients without the Xdebug Helper Tool. In this case you can simply append _`XDEBUG_SESSION_START=PHPSTORM`_ as a get parameter to your Url, and it will also debug this request.
 
 **Toggling Xdebug**
 
 {% hint style="danger" %}
-As Xdebug will slow down your dev environment for every request and also for each command like "cache:clear, watch-storefront" etc. You might not wan't to enable it all the time. For this we have built another useful command.
+As Xdebug will slow down your dev environment for every request and also for each command like "cache:clear, watch-storefront" etc. You might not want to enable it all the time. For this we have built another useful command.
 {% endhint %}
 
 In our global makefile in /var/www we provide the commands for instantly enabling and disabling Xdebug.  

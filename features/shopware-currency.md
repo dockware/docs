@@ -1,7 +1,7 @@
 # Shopware Currency
 
 The default currency of a Shopware installation is EURO.  
-This can only be changed when running the install wizard of Shopware.  
+This can only be changed when running the installation wizard of Shopware.  
   
 With dockware we provide a way to switch the default currency also for existing Shopware 6 shops.  
   

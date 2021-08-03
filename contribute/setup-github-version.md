@@ -1,4 +1,4 @@
-# Setup Github Version
+# Setup GitHub Version
 
 Let's start again with our environment.  
 You need the same things as already mentioned in the dev version of Shopware.  
@@ -10,7 +10,7 @@ Let's take a look at our main goals for the contribution version.
 
 1. Start Docker
 2. Prepare Development + IDE
-3. Github Fork and Remote
+3. GitHub Fork and Remote
 
 **1. Start Docker**
 
@@ -73,10 +73,10 @@ Congratulations! That's it, you're ready to improve Shopware and help the commun
 Please keep in mind, that you should only develop in the folder **"platform"**!
 {% endhint %}
 
-**3. Github Fork and Remote**
+**3. GitHub Fork and Remote**
 
-To create pull requests, you need to have a fork of the Shopware platform on Github.  
-Open this page, sign in on the Github page and fork the repository:  
+To create pull requests, you need to have a fork of the Shopware platform on GitHub.  
+Open this page, sign in on the GitHub page and fork the repository:  
   
 [https://github.com/shopware/platform](https://github.com/shopware/platform)  
   
