@@ -14,8 +14,8 @@ Then use the PHP profiler [tideways](https://tideways.com/). You only need to do
 | Variable | Default Value | Description |
 | :--- | :--- | :--- |
 | TIDEWAYS\_KEY |  | Required |
-| TIDEWAYS\_ENV | production | Set an environment variable to seperate the profiles in tideways. The default is production, as this is in the flex plan of tidwayes the only available environment. |
-| TIDEWAYS\_SERVICE | web | Use this differe between different components/services of your project such as example shop, api etc. |
+| TIDEWAYS\_ENV | production | Set an environment variable to separate the profiles in tideways. The default is production, as this is in the flex plan of tideways the only available environment. |
+| TIDEWAYS\_SERVICE | web | Use this to differ between different components/services of your project such as example shop, api etc. |
 
 ```yaml
 dockware:

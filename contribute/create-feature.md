@@ -2,8 +2,8 @@
 
 t's finally time to create our new feature.  
   
-dockware brings you a running Github version of Shopware 6.  
-Still, its not possible to always deliver the latest commit. There will be multiple new ones everyday on Github.  
+dockware brings you a running GitHub version of Shopware 6.  
+Still, it's not possible to always deliver the latest commit. There will be multiple new ones everyday on GitHub.  
   
 We recommend pulling the latest version before you start a new feature.  
 Do this by pulling the "development" and the "platform" repository on your **host** machine.  
@@ -53,4 +53,3 @@ docker exec -it shopware bash -c './psh.phar install'
 {% endcode %}
 
 Open [http://localhost](http://localhost/) and your updated Shopware 6 should be back.
-

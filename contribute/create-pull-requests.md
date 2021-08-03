@@ -12,7 +12,7 @@ It helps you to avoid any unnecessary stops before your feature is being merged.
 [https://docs.shopware.com/en/shopware-platform-dev-en/community/contribution-guideline](https://docs.shopware.com/en/shopware-platform-dev-en/community/contribution-guideline)  
   
 That's it, you've just created your first pull request.  
-Now it's up to Shopware to decide if its all OK and can be merged.
+Now it's up to Shopware to decide if it's all OK and can be merged.
 
 {% hint style="success" %}
 **Thank you** for being a part of the Shopware community!  
@@ -24,6 +24,3 @@ We all appreciate all those devs out there who make Shopware better and better w
 **Tutorial Video available**
 
 Watch our contribution [Video Tutorial on youtube](https://youtu.be/3Or8SPLoPGc).
-
-
-

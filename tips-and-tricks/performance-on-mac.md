@@ -3,15 +3,15 @@
 **Docker is slow on your MAC?**
 
 This can have many reasons!  
-It's good to have a basic knowledge in Docker and also to cleanup your system.  
-We want to give you some insight in our best practices which work really good for us.
+It's good to have basic knowledge in Docker and also to clean up your system.  
+We want to give you some insight in our best practices which work perfect for us.
 
 **Don't use Bind-Mounting!**
 
 One of the most mistaken things out there when people say Docker for MAC is slow,  
 is because they use bind-mounting with a huge number of files \(assets, caches, and more\).  
 And yes, Shopware and also Symfony have lots of these files.  
-In Linux it works better, but shouldn't we just make a step back and focus on what the problem is?!  
+In Linux, it works better, but shouldn't we just make a step back and focus on what the problem is?!  
   
 Docker offers us a way of running a separate and isolated system on our host machine.  
 In combination with lots of deeper integrations such as "docker cp", "docker exec", "bind-mounting" and more, we tend to think we really need these things. And that's the problem!  

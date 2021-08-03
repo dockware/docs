@@ -23,16 +23,16 @@ shopware:
 
 **Enable Xdebug in your client**
 
-**Eanble Xdebug in Chrome**
+**Enable Xdebug in Chrome**
 
-Enable Xdebug in your chrome extension by clicking on the option "Debug".  
+Enable Xdebug in your Chrome extension by clicking on the option "Debug".  
 Now start your XDebug listener in your IDE and start debugging.
 
 ![enable Xdebug in Google Chrome](../.gitbook/assets/xdebug-enable-in-chrome.png)
 
-**Eanble Xdebug in API clients**
+**Enable Xdebug in API clients**
 
-You might want to debug your API requests or other requets in clients without the Xdebug Helper Tool. In this case you can simply append _`XDEBUG_SESSION_START=PHPSTORM`_ as a get parameter to your Url and it will also debug this request.
+You might want to debug your API requests or other requests in clients without the Xdebug Helper Tool. In this case you can simply append _`XDEBUG_SESSION_START=PHPSTORM`_ as a get parameter to your Url and it will also debug this request.
 
 **Toggling Xdebug**
 

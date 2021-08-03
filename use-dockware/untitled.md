@@ -75,7 +75,7 @@ Attention! If you use a https connection and chrome as browser, it might block y
 This can be easily changed by following [these steps](../faq/chrome-problems.md) from our FAQ.
 {% endhint %}
 
-There are also other ways to start a Shopware 6 shop.
+There are other ways to start a Shopware 6 shop.
 
 **Run Shopware 6 with specific version**
 

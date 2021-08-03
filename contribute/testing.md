@@ -41,8 +41,7 @@ There is also a test suite for unit tests in the administration.
 You can run the Javascript tests with the following command:
 
 {% code title="IN DOCKER" %}
-```php
+```shell
 ./psh.phar administration:unit 
 ```
 {% endcode %}
-

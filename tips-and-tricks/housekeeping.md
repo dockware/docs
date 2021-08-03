@@ -1,6 +1,6 @@
 # Housekeeping
 
-As it is in real life - some house keeping doesn't hurt nobody! If your hallway is loaded with lots of messy stuff, you just can't walk through it as fast as you want to.
+As it is in real life - some housekeeping doesn't hurt nobody! If your hallway is loaded with lots of messy stuff, you just can't walk through it as fast as you want to.
 
 And it's the same with Docker. Cleaning and removing unused and dangling images and volumes makes things faster again.
 
