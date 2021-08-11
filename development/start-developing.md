@@ -4,7 +4,7 @@ We start by preparing our environment.
 To develop new plugins, themes and features, in the most efficient way, we recommend a few things.  
 
 
-* **Docker Compose** This helps you to create a good architecture and blue prints of your setup. 
+* **Docker Compose** This helps you to create a good architecture and blueprints of your setup. 
 * **IDE with SFTP upload** We recommend [PhpStorm](https://www.jetbrains.com/de-de/phpstorm/) ❤️ It's just so good...and it also has automatic uploads. 
 * **Chrome XDebug Extension** Dockware comes with plug'n'play XDebug. All you need is [this](https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc?hl=en) extension to enable it in your browser.
 
@@ -87,7 +87,7 @@ Since january 2021 and the docker engine always getting better we recommend to u
 
 
 
-**Only if you wan't to use sftp**, otherwise see our [bind-mouting](../tips-and-tricks/how-to-use-bind-mounting.md) docs.  
+**Only if you want to use sftp**, otherwise see our [bind-mouting](../tips-and-tricks/how-to-use-bind-mounting.md) docs.  
   
 Open the **src** folder with your preferred IDE and wait until finished loading.  
 Then add a new SFTP connection to your container. We recommend Automatic-Upload if possible.  

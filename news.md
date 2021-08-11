@@ -45,31 +45,30 @@ using the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 ### Added
  - made logging from cli & fpm constistent 
  - made images smaller
- - ebalbed opcache per default
- - custom ssh dosen't require sudo pwd anymore
- - 
+ - enabled opcache per default
+ - custom ssh doesn't require sudo pwd anymore
  
 ### Fixed
   - CLI Logging now works 
   - located makefile again under /var/wwww
   - fixed switching xdebug
   - fixed restarting with custom ssh user
-  - fixed makefule essentials (watch commands)
+  - fixed makefile essentials (watch commands)
   - fixed session permissions on /etc/..
 
 
 ## [1.3.2] - 2020-10-22
 ### Added
  - Shopware 5.5.10 dev image
- - Big perfromance boost if xdebug is off
+ - Big performance boost if xdebug is off
  - make commands for en/disable xdebug without restart can be found in **var/www/scripts**
  - composer 2.0
  
 ### Fixes
- - Make sure xdebug is safly disabled
+ - Make sure xdebug is safely disabled
  
  ### removed
- - hirak/prestissimo (not lomger needed as we have now composer 2.0)
+ - hirak/prestissimo (no longer needed as we have now composer 2.0)
 
 ## [1.3.1] - 2020-10-16
 

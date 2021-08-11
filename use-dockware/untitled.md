@@ -3,7 +3,7 @@
 It's finally time to start your first Shopware 6 with dockware.  
 For this we use the **dockware \#play** version, which brings everything you need to simply start and explore Shopware 6.  
   
-**Run Shopware 6 with latest version**
+**Run Shopware 6 with the latest version**
 
 ```bash
 docker run --rm -p 80:80 dockware/play:latest

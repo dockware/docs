@@ -10,7 +10,7 @@ This is your knowledge base from installing docker, starting your first shopware
 
 If you have anything that might be missing, don't hesitate to contact us. Thank You!
 
-**Where to find all informations about dockware?**
+**Where to find all information about dockware?**
 
 {% hint style="info" %}
 All other information then the documentation can be found on [dockware.io](https://dockware.io)
