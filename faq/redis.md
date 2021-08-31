@@ -1,6 +1,6 @@
 # Redis
 
-**How to use Redis?**
+## **How to use a Redis container?**
 
 Redis is a Key/Value storage that allows you to save data outside your database with blazing fast access.  
 Shopware supports the usage of Redis for session and cache handling.  
@@ -33,7 +33,11 @@ networks:
 ```
 {% endcode %}
 
-Now make sure you configure the Redis instance to be used either for session handling, cache handling or both.
+## **Shopware Configuration**
+
+### **Connection**
+
+Now make sure you configure the Redis instance to be used either for session handling, cache handling or both. 
 
 Add the following to your ".env" file:
 
@@ -45,4 +49,12 @@ REDIS_CACHE_HOST=redis
 REDIS_CACHE_PORT=6379
 ```
 {% endcode %}
+
+### Use Redis Caches
+
+Please note, that you also need to use it for specific parts in Shopware.
+
+See this page for more: [https://developer.shopware.com/docs/guides/hosting/performance/caches\#example-replace-some-cache-with-redis](https://developer.shopware.com/docs/guides/hosting/performance/caches#example-replace-some-cache-with-redis)
+
+
 
