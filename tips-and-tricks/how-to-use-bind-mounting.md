@@ -13,6 +13,14 @@ Thus, all related things, including issues such as file permission problems do n
 
 Let's get started with our bind-mount setup.
 
+{% hint style="info" %}
+**WINDOWS Users:**  
+Please see also this page for now, until we had time to integrate it in this page.  
+Thank you for your understanding:  
+  
+[https://github.com/dockware/docs/issues/3](https://github.com/dockware/docs/issues/3)
+{% endhint %}
+
 ## 1. Preparing a fresh and clean project
 
 An easy starting point for that is to use our "dev" example on Github. [https://github.com/dockware/examples/tree/master/bind-mount](https://github.com/dockware/examples/tree/master/bind-mount)
