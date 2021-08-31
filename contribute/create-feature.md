@@ -1,10 +1,10 @@
 # Create Feature
 
-t's finally time to create our new feature.  
-  
+t's finally time to create our new feature.
+
 dockware brings you a running GitHub version of Shopware 6.  
-Still, it's not possible to always deliver the latest commit. There will be multiple new ones everyday on GitHub.  
-  
+Still, it's not possible to always deliver the latest commit. There will be multiple new ones everyday on GitHub.
+
 We recommend pulling the latest version before you start a new feature.  
 Do this by pulling the "development" and the "platform" repository on your **host** machine.  
 Open your terminal and navigate to the "src" folder.

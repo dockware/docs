@@ -40,7 +40,11 @@ This steps only required if you want to use the shopware version provided by you
 2. Make sure the `volumes` are **commented out** in the `docker-compose.yml` 
 3. Start the container with `docker-compose up -d`
 4. Initially copy the dockware files to your host with: `docker cp shop:/var/www/html/. ./src`
-5. Move the content around \(`cd src && mv html/* . && mv html/.env . && rmdir html && cd ..` \)
+
+You should now have a "src" folder in your directory.  
+That folder contains the whole Shopware files, including .env and whatever is located in the DocRoot of Apache.
+
+Congratulations, you now have a local Shopware version to work with.
 
 ## 3. Set Permissions
 

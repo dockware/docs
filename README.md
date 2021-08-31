@@ -31,9 +31,3 @@ That's super easy. Just make a Pull Request on our [documentation GitHub Repo](h
 Then think about to sponsor it with [Github sponsoring](https://github.com/sponsors/dockware) 💜
 {% endhint %}
 
-
-
-
-
-
-

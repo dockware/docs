@@ -3,19 +3,19 @@
 The latest version of Xdebug changed the way how code coverage works.  
 It now depends on a specific **mode** that has to be set within the configuration of XDebug.
 
-Dockware delivers this mode in `debug`  and not in the required `coverage` mode.
+Dockware delivers this mode in `debug` and not in the required `coverage` mode.
 
 It's still easy to enable code coverage for your project.  
 Just follow these steps...
 
-### Enable XDebug
+## Enable XDebug
 
 Make sure to enable XDebug either by using the [environment variable](environment-variables.md) or by using the [makefile commands](../faq/scripts.md) in the folder `/var/www`
 
-### Set Coverage Mode
+## Set Coverage Mode
 
 You can always change the mode by **exposing** a new environment variable before your command.  
-That means if you want to use code coverage for your PHPUnit tests, simply add the exposing of the correct `XDEBUG_MODE` directly before your command. 
+That means if you want to use code coverage for your PHPUnit tests, simply add the exposing of the correct `XDEBUG_MODE` directly before your command.
 
 ```bash
 XDEBUG_MODE=coverage php vendor/bin/phpunit

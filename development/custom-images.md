@@ -7,7 +7,7 @@ This is possible with 2 different approaches:
 * Inject Script in Entrypoint
 * Custom Build from Dockware 
 
-### Inject Script in Entrypoint
+## Inject Script in Entrypoint
 
 The latest versions of dockware images allow you to inject your custom script in the boot entrypoint of the dockware image.
 
@@ -40,9 +40,7 @@ If you now start your Docker container, it should execute your custom script bef
 
 If you want to see what it does, just use the `docker logs` command.
 
-
-
-### Custom Build from Dockware
+## Custom Build from Dockware
 
 The approach above will execute your script every time the container is being started.  
 But what if you want to adjust different packages - do you really want to install them over and over again?
@@ -88,3 +86,4 @@ If you ever want to rebuild your image without deleting it before, just use this
 ```text
 docker-compose build
 ```
+

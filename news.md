@@ -1,14 +1,12 @@
 # News
 
-### Latest News
+## Latest News
 
 2021-03-12  
 Since docker engine is getting always better we now prefer to use [bind-mounting](tips-and-tricks/how-to-use-bind-mounting.md) instead of sftp.  
 But sftp is still a good alternative if bind-mounting does not work for you well.
 
-
-
-### Changelog
+## Changelog
 
 ```text
 # Changes in Dockware
@@ -32,22 +30,22 @@ using the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
     This led to problems when creating e.g. products in the Administration.
   - Fix problem where mysqld.sock.lock file was not correctly deleted on bootup, which could 
     lead to the issue that the MySQL fails when starting.
-  
+
 
 ## [1.3.4] - 2020-11-12
 
 ### Fixed
   - Remove wrong "/" path in Shopware 5 images
   - set home dir for users to /var/www to avoid watcher permission bugs
-  
-  
+
+
 ## [1.3.3] - 2020-11-02
 ### Added
  - made logging from cli & fpm constistent 
  - made images smaller
  - enabled opcache per default
  - custom ssh doesn't require sudo pwd anymore
- 
+
 ### Fixed
   - CLI Logging now works 
   - located makefile again under /var/wwww
@@ -63,10 +61,10 @@ using the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
  - Big performance boost if xdebug is off
  - make commands for en/disable xdebug without restart can be found in **var/www/scripts**
  - composer 2.0
- 
+
 ### Fixes
  - Make sure xdebug is safely disabled
- 
+
  ### removed
  - hirak/prestissimo (no longer needed as we have now composer 2.0)
 
@@ -79,7 +77,7 @@ using the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 ### Removed
 - Add mod_php
 - Add mpm_prefork 
- 
+
 ### Fixes
 - Fix broken Storefront Watcher due to wrong Apache Document directory
 - Fix broken Storefront Watcher script in dockware/contribution due to missing second request header.

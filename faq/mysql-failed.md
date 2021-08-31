@@ -9,14 +9,12 @@ So in fact, we haven't been quite able to figure it out, but we have a solution.
 {% hint style="success" %}
 **Solution for all Images since 2020-11-05**
 
-We have fixed that error on 5th november 2020. So just pull the newest image and the error should not happen again.  
-
+We have fixed that error on 5th november 2020. So just pull the newest image and the error should not happen again.
 
 Please keep in mind that this will remove any persistent data if you do not have mounted a volume for mysql.
 {% endhint %}
 
-You have to remove the **volumes** for your container.  
-
+You have to remove the **volumes** for your container.
 
 {% hint style="danger" %}
 **Attention**
