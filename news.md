@@ -2,7 +2,37 @@
 
 ## Latest News
 
-2021-03-12  
+### 2021-09-06
+
+We've added Shopware 6.4.4.0 for PLAY and DEV.
+
+Allso, the Essentials image does now have a simple **makefile** that easily downloads your target Shopware 6 version for you. You can then simply continue your installation after choosing your version.
+
+Check the command out [here](development/dockware-essentials.md#install-your-shopware-version).
+
+### 2021-09-01
+
+We're happy to announce that the new **dockware versions 1.4** are being rolled out.  
+  
+I think its the first mass rollout with more than 100 images being updated.  
+we have a huge QA pipe by now \(thats why some did not work and im glad about that\) but if you face any problems, just let us know please.  
+We did also go through the github issues and updated the labels.   
+so you should now also know if something is broken because of shopware itself...which was sometimes confusing.  
+  
+how do you know what version you have? "docker logs" should show the version 1.4 at the top of the output when starting your container.  
+  
+Heres the changelog:
+
+* new feature: ENV variable BUILD\_PLUGIN=myPluginName allows you to build your plugin with the provided dockware version without starting dockware directly.
+* real demo data for Shopware &gt; 6.2
+* ready to use base.scss class in the dockware demo plugin \(for watcher tests\)
+* PimpMyLog has now improved error logs for SW5 + SW6
+* PimpMyLog is now PHP 8 ready
+* SW5 has now Mailcatcher preconfigured...so it should automatically work
+* different improvements and fixes across...yeah...everything
+
+### 2021-03-12
+
 Since docker engine is getting always better we now prefer to use [bind-mounting](tips-and-tricks/how-to-use-bind-mounting.md) instead of sftp.  
 But sftp is still a good alternative if bind-mounting does not work for you well.
 
