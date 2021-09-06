@@ -44,6 +44,7 @@
 * [Custom Domains](development/custom-domains.md)
 * [Custom Images](development/custom-images.md)
 * [Code Coverage](development/code-coverage.md)
+* [CLI Build Shopware 6 Plugin](development/cli-build-shopware-6-plugin.md)
 
 ## Contribute
 

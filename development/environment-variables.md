@@ -14,6 +14,7 @@ You will find the available variables for your image on the [Docker Hub](https:/
 | APACHE | APACHE\_DOCROOT | /var/www/html/public | Sets the default DocRoot of Apache |
 | SHOPWARE | SW\_CURRENCY | not-set | Switch to a different default currency for the system, like GBP. This will be used in the administration. |
 | COMPOSER | COMPOSER\_VERSION | not-set | Let's you switch between composer 1 and 2. |
+| BUILDING | BUILD\_PLUGIN |  | If provided, the container will only build the provided plugin and immeditaly quit afterwards. |
 
 ### Users
 
