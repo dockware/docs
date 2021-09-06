@@ -6,6 +6,7 @@
 ## Setup
 
 * [Docker Setup](setup/docker-setup.md)
+* [What Image should you use?](setup/what-image-should-you-use.md)
 * [Performance Tweaks](setup/performance-tweaks.md)
 
 ## Use Dockware
