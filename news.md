@@ -2,6 +2,18 @@
 
 ## Latest News
 
+### 2021-09-08
+
+The latest release of **Shopware 5 \(v5.7.3\)** has been published for dockware PLAY and DEV today.  
+Give it a test run with this command:
+
+```bash
+docker run --rm -p 80:80 dockware/play:5.7.3
+```
+
+Have fun with the new version!  
+
+
 ### 2021-09-06
 
 We've added Shopware 6.4.4.0 for PLAY and DEV.
