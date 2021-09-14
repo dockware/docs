@@ -2,6 +2,16 @@
 
 ## Latest News
 
+### 2021-09-14
+
+We've released **dockware v1.4.1** for Shopware 6.4.4.1 and latest today.  
+It comes with the following official fixes and will be rolled out across all images soon:
+
+* Added new "make download" command to easily prepare the installation of Shopware in the "essentials" image. \(already released\)
+* Fixed missing demo data in some Shopware 5 images \(already released\)
+* Fixed problem with wrong function definer with custom MySQL user \([https://github.com/dockware/dockware/issues/58](https://github.com/dockware/dockware/issues/58)\)  
+  \(Thanks to "_suc-sgor"_ for this\)
+
 ### 2021-09-08
 
 The latest release of **Shopware 5 \(v5.7.3\)** has been published for dockware PLAY and DEV today.  
