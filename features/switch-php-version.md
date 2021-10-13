@@ -1,8 +1,8 @@
 # Switch PHP Version
 
-Every dockware version allows you to switch to any PHP version that is supported by Shopware 6.  
-This is done when starting your container.  
-You can either use a command option when using "docker run", or set the PHP version in your docker-compose.yml file.  
+Every dockware version allows you to switch to any PHP version that is supported by Shopware 6.\
+This is done when starting your container.\
+You can either use a command option when using "docker run", or set the PHP version in your docker-compose.yml file.\
 
 
 **Set PHP Version with docker run**
@@ -22,4 +22,3 @@ You can also watch a tutorial video. Let us know what you think and subscribe to
 [dockware - switch php version with "docker run"](https://youtu.be/LGukxv72Nm4)
 
 [dockware - switch php version with "docker-compose"](https://youtu.be/E8tmkLabSBc)
-

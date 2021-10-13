@@ -11,4 +11,3 @@ This can either be done by providing a port when using "docker run -p 3306:3306"
 Please note, you don't need to use 3306 on your host, you can use any free port like 3300:3306, but keep in mind to use that one when connecting from Sequel Pro.
 
 ![sequel Pro - default screen](../.gitbook/assets/sequel-pro-main-view.png)
-

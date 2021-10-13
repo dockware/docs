@@ -32,10 +32,10 @@ Now start dockware with this command from the terminal with the directory that c
 docker-compose up -d
 ```
 
-The option "-d" means "detached" and makes sure your container isn't quit when you close your terminal.  
+The option "-d" means "detached" and makes sure your container isn't quit when you close your terminal.\
 If you still want to see the output of dockware, use this command.ON HOST
 
-```text
+```
 docker logs -f shopware
 ```
 
@@ -47,5 +47,4 @@ You can also find some other and deeper examples in our [dockware examples](http
 If you are looking for passwords and default credentials of Shopware and dockware, please take a look at this page: [Default Credentials](default-credentials.md)
 {% endhint %}
 
-### 
-
+###

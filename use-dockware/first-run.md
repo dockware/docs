@@ -1,8 +1,8 @@
 # First Run
 
-It's finally time to start your first Shopware 6 with dockware.  
-For this we use the **dockware \#play** version, which brings everything you need to simply start and explore Shopware 6.  
-  
+It's finally time to start your first Shopware 6 with dockware.\
+For this we use the **dockware #play** version, which brings everything you need to simply start and explore Shopware 6.\
+\
 **Run Shopware 6 with latest version**
 
 ```bash
@@ -71,7 +71,7 @@ https://www.shopware.com/de/changelog/
 ```
 
 {% hint style="warning" %}
-Attention!   
+Attention! \
 If you use a https connection and chrome as browser, it might block your connection to https://localhost. This can be easily changed by following [these steps](../faq/chrome-problems.md) from our FAQ.
 {% endhint %}
 
@@ -95,7 +95,7 @@ docker run --rm -p 80:80 --env PHP_VERSION=7.2 dockware/play:latest
 If you are looking for passwords and default credentials of Shopware and dockware, please take a look at this page: [Default Credentials](default-credentials.md)
 {% endhint %}
 
-### 
+###
 
 ### Tutorial Video available
 
@@ -103,6 +103,4 @@ Watch our short video about starting and exploring  [Shopware 6 with dockware.](
 
 ![Shopware 6 with dockware video](../.gitbook/assets/video-tutorial.jpg)
 
-  
-
-
+\

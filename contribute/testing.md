@@ -2,11 +2,11 @@
 
 **PHP Unit Tests**
 
-We highly encourage you to execute the unit tests before creating a Pull Request.  
+We highly encourage you to execute the unit tests before creating a Pull Request.\
 Connect into your container and run this command:
 
 {% code title="IN DOCKER" %}
-```text
+```
 ./psh.phar unit
 ```
 {% endcode %}
@@ -37,7 +37,7 @@ php ./vendor/bin/phpunit --configuration ./vendor/shopware/platform/phpunit.xml.
 
 **Administration Tests**
 
-There is also a test suite for unit tests in the administration.  
+There is also a test suite for unit tests in the administration.\
 You can run the Javascript tests with the following command:
 
 {% code title="IN DOCKER" %}
@@ -45,4 +45,3 @@ You can run the Javascript tests with the following command:
 ./psh.phar administration:unit 
 ```
 {% endcode %}
-

@@ -34,4 +34,3 @@ networks:
     external: false
 ```
 {% endcode %}
-
