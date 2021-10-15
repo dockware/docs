@@ -2,6 +2,29 @@
 
 ## Latest News
 
+### 2021-10-15
+
+We've updated all our images with our new building pipelines.
+
+This means, that all of those images will now also be built automatically for **multiple architectures**, such as for the Apple M1.
+
+{% hint style="info" %}
+So starting with today, all dockware images should now also work on M1!
+{% endhint %}
+
+_(Please keep in mind, that some older versions failed to build because of a random problem or missing unit tests, which is a blocker for us, but this is only a handful)_
+
+__
+
+In addition to this, we're happy to rollout these new features with **version 1.4.2** of dockware:
+
+* Added "jq" package for JSON processing in bash
+* Add PHP 5.6 support to essentials and flex image
+* Composer was accidentally always updated, even if no ENV variable has been provided_. _This won't happen now, so it should always work offline too.
+* Fix problems with XDEBUG on PHP 5.6
+
+
+
 ### 2021-10-13
 
 We are aware of a connection problem with [https://getcomposer.org/](https://getcomposer.org) today. 
