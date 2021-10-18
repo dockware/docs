@@ -68,19 +68,19 @@
 
 * [Sequel Pro](faq/sequel-pro.md)
 * [Dockware and other images](faq/dockware-and-other-images.md)
-* [Scripts \(PSH?\)](faq/scripts.md)
+* [Scripts (PSH?)](faq/scripts.md)
 * [Redis](faq/redis.md)
 * [Error Port not available](faq/error-port-not-available.md)
 * [MySQL failed](faq/mysql-failed.md)
 * [Elasticsearch](faq/elasticsearch.md)
 * [Windows Problems](faq/windows-problems.md)
 * [Chrome Problems](faq/chrome-problems.md)
+* [Import MySQL Dump](faq/import-mysql-dump.md)
 * [Shopware 5 Support](faq/shopware-5-support.md)
 
-## Additional Links <a id="additional"></a>
+## Additional Links <a href="additional" id="additional"></a>
 
 * [Imprint](https://www.dasistweb.de/en/imprint)
 * [Founders](additional/founders.md)
-* [Dockware website](https://dockware.io/)
+* [Dockware website](https://dockware.io)
 * [Dockware in Shopware Slack](https://shopwarecommunity.slack.com/archives/C014X8HE8U8)
-
