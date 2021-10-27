@@ -2,6 +2,31 @@
 
 ## Latest News
 
+### 2021-10-27
+
+We're happy to announce the release of the 2 latest Shopware 5 version v5.7.5 + v5.7.6 for both, dockware **play** and **dev**.
+
+In addition to this, we have a new goodie for you (currently not yet available in all images).
+
+But the **makefile** in _/var/www_ will soon include a command to easily switch the PHP version at runtime.
+
+This is a perfect companion for pipelines such as with Gitlab, where you cannot provide environment variables when booting the container.
+
+Here's a sneak peak
+
+```bash
+make switch-php version=8.0
+make switch-php version=7.4
+```
+
+And it has been designed to be as robust as possible (hopefully). So switching to either the same, or even a non-existing PHP version should not screw up things.
+
+If you want to read more about PHP switching, see [this page](features/switch-php-version.md)
+
+Give us a bit, but then then we rollout every image again for you.
+
+
+
 ### 2021-10-15
 
 We've updated all our images with our new building pipelines.
@@ -27,7 +52,7 @@ In addition to this, we're happy to rollout these new features with **version 1.
 
 ### 2021-10-13
 
-We are aware of a connection problem with [https://getcomposer.org/](https://getcomposer.org) today. 
+We are aware of a connection problem with [https://getcomposer.org/](https://getcomposer.org) today.&#x20;
 
 With that we found out that our images accidentally trigger a "composer update" in the entrypoint, even if no version has been defined as environment variable.
 
@@ -88,7 +113,7 @@ how do you know what version you have? "docker logs" should show the version 1.4
 \
 Heres the changelog:
 
-* new feature: ENV variable BUILD_PLUGIN=myPluginName allows you to build your plugin with the provided dockware version without starting dockware directly.
+* new feature: ENV variable BUILD\_PLUGIN=myPluginName allows you to build your plugin with the provided dockware version without starting dockware directly.
 * real demo data for Shopware > 6.2
 * ready to use base.scss class in the dockware demo plugin (for watcher tests)
 * PimpMyLog has now improved error logs for SW5 + SW6

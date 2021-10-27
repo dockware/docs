@@ -5,7 +5,17 @@ This is done when starting your container.\
 You can either use a command option when using "docker run", or set the PHP version in your docker-compose.yml file.\
 
 
-**Set PHP Version with docker run**
+### **Switch with RUN command**
+
+```bash
+docker run --rm -p 80:80 -e PHP_VERSION=7.2 dockware/play:latest
+```
+
+{% embed url="https://www.youtube.com/watch?v=LGukxv72Nm4" %}
+Watch our video about switching while using "docker run"
+{% endembed %}
+
+### **Switch with docker-compose**
 
 ```yaml
 shopware:
@@ -15,10 +25,22 @@ shopware:
          - PHP_VERSION=7.2
 ```
 
-Video Tutorial available
+{% embed url="https://www.youtube.com/watch?v=E8tmkLabSBc" %}
+Watch our video about switching with your docker-compose.yml
+{% endembed %}
 
-You can also watch a tutorial video. Let us know what you think and subscribe to our channel.
+### **Switch at Runtime**
 
-[dockware - switch php version with "docker run"](https://youtu.be/LGukxv72Nm4)
+{% hint style="warning" %}
+This is a brand new feature. Please keep in mind, it might not yet exist everywhere, but we are working hard on rolling out all images soon
+{% endhint %}
 
-[dockware - switch php version with "docker-compose"](https://youtu.be/E8tmkLabSBc)
+```bash
+make switch-php version=8.0
+make switch-php version=7.4
+```
+
+The command has been designed to be as robust as possible.
+
+This means, that nothing should break if you switch to the same PHP version, or even a version that is not supported and existing in the current image you use.
+
