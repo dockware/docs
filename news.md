@@ -10,7 +10,7 @@ In addition to this, we have a new goodie for you (currently not yet available i
 
 But the **makefile** in _/var/www_ will soon include a command to easily switch the PHP version at runtime.
 
-This is a perfect companion for pipelines such as with Gitlab, where you cannot provide environment variables when booting the container.
+This is a perfect companion for pipelines such as with Gitlab, where you cannot provide environment variables when booting the container. _(Thanks to Marcus from Kellerkinder for your help with this)._
 
 Here's a sneak peak
 

@@ -10,7 +10,7 @@ All you need is the recommended Chrome Extension for XDebug.
 Download the extension here:\
 [https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc?hl=en](https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc?hl=en)
 
-As soon as you start your dockware container with the environment variable **XDEBUG_ENABLED=1**, you're ready to go.\
+As soon as you start your dockware container with the environment variable **XDEBUG\_ENABLED=1**, you're ready to go.\
 This environment variable helps you to turn ON or OFF XDebug in case you want to switch over to a production similar environment for some tests.
 
 ```yaml
@@ -56,4 +56,13 @@ Please see our section about [Environment Variables](environment-variables.md) f
 Both MAC and Windows have the Docker variable "host.docker.internal" as default value, which should work great as Loopback IP to automatically recognize the host IP.
 
 For Linux however this does not work! Please use **172.17.0.1** this as ENV variable to make it work!
+{% endhint %}
+
+{% hint style="warning" %}
+**XDEBUG and WSL2**\
+If you use docker on Windows with WSL2 you have to set your local ip address from the host in this env variable.
+
+For example:&#x20;
+
+DEBUG\_REMOTE\_HOST=192.168.178.42
 {% endhint %}
