@@ -2,6 +2,20 @@
 
 ## Latest News
 
+### 2021-11-26
+
+PHP 8.1 has finally been released yesterday, and we just can't wait to use the official release version. And so we are happy to announce the **official support of PHP 8.1** in all our dockware images, where PHP 8.x makes sense.
+
+But the new **dockware 1.4.3** versions come with even more features:
+
+* Easy "make switch-php" for live PHP version switching across all images.
+* VIM (and also NANO) is now available in all images, even non-dev images.
+* IMAP PHP extension now available in all images
+
+We hope you like the new version and enjoy working with PHP 8.1
+
+
+
 ### 2021-10-27
 
 We're happy to announce the release of the 2 latest Shopware 5 version v5.7.5 + v5.7.6 for both, dockware **play** and **dev**.
