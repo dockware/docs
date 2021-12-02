@@ -135,4 +135,6 @@ This is existing in our [example repository on Github](https://github.com/dockwa
 
 Need more explanation? Just watch the video where we demonstrate the setup, connection as well as our example application in more detail.
 
+{% embed url="https://www.youtube.com/watch?v=4vZ8V_IIjck" %}
+
 {% embed url="https://youtu.be/4vZ8V_IIjck" %}

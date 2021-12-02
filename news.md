@@ -6,7 +6,7 @@
 
 It's finally here! **Shopware App Development** with dockware and Docker!
 
-We tried to do our best to guide you through these new experience.
+We tried to do our best to guide you through this new experience.
 
 Dockware has investigated the best possible ways to have an **easy and smooth development environment**. There are so many ways to deal with this, so you can use whatever way you like. Still we came up with an idea, that you might enjoy using.
 
