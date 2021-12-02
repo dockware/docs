@@ -10,6 +10,10 @@ This lightweight approach is the way to go when developing for Shopware SaaS, bu
 
 ### Developing with dockware
 
+{% hint style="warning" %}
+Please make sure to learn the basics about app development from the official [Shopware documentation](https://developer.shopware.com/docs/guides/plugins/apps/app-base-guide).
+{% endhint %}
+
 Developing Apps require an additional server. This is the server that runs your actual code.
 
 Thanks to Docker and it's power to launch additional containers, it's an ease to develop this type of projects.&#x20;
