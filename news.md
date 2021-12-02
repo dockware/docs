@@ -2,6 +2,20 @@
 
 ## Latest News
 
+### 2021-12-02
+
+It's finally here! **Shopware App Development** with dockware and Docker!
+
+We tried to do our best to guide you through these new experience.
+
+Dockware has investigated the best possible ways to have an **easy and smooth development environment**. There are so many ways to deal with this, so you can use whatever way you like. Still we came up with an idea, that you might enjoy using.
+
+And the best thing is, we've created a complete sample application that is available in our [Open Source Example Repository on Github](https://github.com/dockware/examples).
+
+Even better - we've created a [YouTube video](https://www.youtube.com/watch?v=4vZ8V\_IIjck) where we explain everything and guide you through the basics and our full sample application.
+
+It's finally time to create the best Shopware apps out there! Are you in?
+
 ### 2021-11-26
 
 PHP 8.1 has finally been released yesterday, and we just can't wait to use the official release version. And so we are happy to announce the **official support of PHP 8.1** in all our dockware images, where PHP 8.x makes sense.
@@ -59,7 +73,7 @@ In addition to this, we're happy to rollout these new features with **version 1.
 
 * Added "jq" package for JSON processing in bash
 * Add PHP 5.6 support to essentials and flex image
-* Composer was accidentally always updated, even if no ENV variable has been provided_. _This won't happen now, so it should always work offline too.
+* Composer was accidentally always updated, even if no ENV variable has been provided_._ This won't happen now, so it should always work offline too.
 * Fix problems with XDEBUG on PHP 5.6
 
 

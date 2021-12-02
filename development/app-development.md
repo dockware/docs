@@ -116,3 +116,19 @@ You have a Shopware app environment where your backend service just gets a dynam
 
 Now it's up to you, to create the purpose and logic of your software!
 {% endhint %}
+
+
+
+### Example
+
+We have prepared a complete example application.
+
+This is existing in our [example repository on Github](https://github.com/dockware/examples).
+
+
+
+### Video
+
+Need more explanation? Just watch the video where we demonstrate the setup, connection as well as our example application in more detail.
+
+{% embed url="https://www.youtube.com/watch?v=4vZ8V_IIjck" %}
