@@ -8,7 +8,7 @@ It's finally here! **Shopware App Development** with dockware and Docker!
 
 We tried to do our best to guide you through this new experience.
 
-Dockware has investigated the best possible ways to have an **easy and smooth development environment**. There are so many ways to deal with this, so you can use whatever way you like. Still we came up with an idea, that you might enjoy using.
+Dockware has investigated the best possible ways to have an **easy and smooth development environment**. There are so many ways to deal with this, so you can use whatever way you like. Still we came up with an idea, that you might enjoy using. Read more about it in our [documentation](development/app-development.md).
 
 And the best thing is, we've created a complete sample application that is available in our [Open Source Example Repository on Github](https://github.com/dockware/examples).
 
