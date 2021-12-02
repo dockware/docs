@@ -39,6 +39,7 @@
 * [Debugging](development/debugging.md)
 * [Watchers](development/watchers.md)
 * [Environment Variables](development/environment-variables.md)
+* [App Development](development/app-development.md)
 * [Update Shopware](development/update-shopware.md)
 * [Dockware Essentials](development/dockware-essentials.md)
 * [Custom Domains](development/custom-domains.md)
@@ -78,7 +79,7 @@
 * [Import MySQL Dump](faq/import-mysql-dump.md)
 * [Shopware 5 Support](faq/shopware-5-support.md)
 
-## Additional Links <a href="additional" id="additional"></a>
+## Additional Links <a href="#additional" id="additional"></a>
 
 * [Imprint](https://www.dasistweb.de/en/imprint)
 * [Founders](additional/founders.md)
