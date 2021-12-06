@@ -121,7 +121,13 @@ You have a Shopware app environment where your backend service just gets a dynam
 Now it's up to you, to create the purpose and logic of your software!
 {% endhint %}
 
+### Logging
 
+Logging is always important, but even more if you have decentralized systems such as with developing app systems for Shopware.
+
+We recommend using systems like ELK (Elastic Logstash Kibana) for such setups. But if you need a quick start and easy solution, then we have a guide on that using the built-in Pimp my Log of dockware. [Read more here](../features/pimp-my-log.md).
+
+###
 
 ### Example
 
