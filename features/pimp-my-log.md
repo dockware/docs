@@ -16,6 +16,69 @@ Switch between different prepared logs, such as Apache error logs, access logs a
 
 ![pimp my log - change log](../.gitbook/assets/pimpmylog-switch-log-type.png)
 
+### Add custom logs
+
+Dockware has been prepared to show the Shopware and Apache default logs. But what if you want to add custom log files from your shop or the plugin you are developing?
+
+That's easy too!
+
+Let's imagine you create a new plugin with a custom log file. That one has probably the name of your plugin, as well as the environment and probably datetime.
+
+You can add your custom log file, by simply adding a new JSON configuration to Pimp my Log. Do this, by mounting your own file into the folder **/var/www/pimpmylog/config.user.d** as shown here:
+
+```yaml
+version: "3.0"
+
+services:
+    
+    shop:
+       image: dockware/dev:latest
+       volume:
+          - "./pimpmylog/my_plugin.json:/var/www/pimpmylog/config.user.d/my_plugin.json"
+```
+
+The content of the file can just look like this. It has the name that will be used in the web application, a path to your log file using a pattern expression, and information about the way how your log line is structured.&#x20;
+
+This is a sample that parses the following type of log entry.
+
+|          |          |               |      |      |
+| -------- | -------- | ------------- | ---- | ---- |
+| Datetime | Severity | Error Message | File | Line |
+
+```json
+{
+    "my_plugin": {
+        "display"   : "My Plugin Logs",
+        "path"      : "/var/www/html/var/logs/my_plugin_*.log",
+        "notify": false,
+        "format"    : {
+            "multiline": "",
+            "regex"    : "@\\[(.*?)\\]\\s*?\\w*\\.(.*?):\\s?((.*?)\\s*?(?:at|in)\\s*?(.*?)\\s*?(?:on line|line)\\s*([0-9]*).*?|(.*?))$@",
+            "match"    : {
+                "Date"     : 1,
+                "Severity" : 2,
+                "Error"    : [3,4],
+                "File"     : 5,
+                "Line"     : 6
+            },
+            "types"    : {
+                "Date"     : "date:m-d H:i:s",
+                "Severity" : "badge:severity",
+                "File"     : "pre:\/-69",
+                "Line"     : "numeral",
+                "Error"    : "pre"
+            }
+        }
+    }
+}
+```
+
+You can find more examples on the [Pimp my Log website](https://www.pimpmylog.com/documentation/configuration.html).
+
+Here is a video that shows you how it would look like.
+
+{% embed url="https://youtu.be/3hdKq4AEzm8" %}
+
 ### Logging with Apps
 
 Logging is far more interesting when it comes to decentralized systems, such as with the ones you'll be building when creating [Shopware Apps](../development/app-development.md).
@@ -54,32 +117,14 @@ volumes:
 
 Now you have successfully connected the logs from the backend service with the folder inside your Shopware container.
 
-The next thing is, to correctly configured our additional **configuration JSON** for Pimp my Log, which is already mounted into the Shopware container too (_step 3_).
+The next thing is, to correctly configured our additional **configuration JSON** for Pimp my Log, which is already mounted into the Shopware container too (_step 3_). This snippet only focuses on the display name and path. Please see the example above for a full code snippet.
 
 ```json
 {
     "backend_service": {
         "display"   : "Backend Service Logs",
         "path"      : "/var/www/logs/backend_service/*.log",
-        "notify": false,
-        "format"    : {
-            "multiline": "",
-            "regex"    : "@\\[(.*?)\\]\\s*?\\w*\\.(.*?):\\s?((.*?)\\s*?(?:at|in)\\s*?(.*?)\\s*?(?:on line|line)\\s*([0-9]*).*?|(.*?))$@",
-            "match"    : {
-                "Date"     : 1,
-                "Severity" : 2,
-                "Error"    : [3,4],
-                "File"     : 5,
-                "Line"     : 6
-            },
-            "types"    : {
-                "Date"     : "date:m-d H:i:s",
-                "Severity" : "badge:severity",
-                "File"     : "pre:\/-69",
-                "Line"     : "numeral",
-                "Error"    : "pre"
-            }
-        }
+        ...
     }
 }
 ```
