@@ -2,6 +2,14 @@
 
 ## Latest News
 
+### 2021-12-06
+
+Now that we have rolled out guides on how to develop Apps for Shopware, there might be questions on how to create and view **log files across different systems**.
+
+So we have improved our [Pimp my Log guides](features/pimp-my-log.md) for shop developers, plugin manufacturers as well as  app developers.
+
+You can read the full guide [here](features/pimp-my-log.md).
+
 ### 2021-12-02
 
 It's finally here! **Shopware App Development** with dockware and Docker!
