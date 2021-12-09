@@ -56,6 +56,10 @@
 * [Testing](contribute/testing.md)
 * [Create Pull Requests](contribute/create-pull-requests.md)
 
+## CI/CD
+
+* [Github](ci-cd/github.md)
+
 ## Tips & Tricks
 
 * [Performance on Mac](tips-and-tricks/performance-on-mac.md)
