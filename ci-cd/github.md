@@ -46,7 +46,7 @@ on:
 jobs:
 
   e2e:
-    name: E2E Tests | Shopware ${{ matrix.shopware }}
+    name: E2E Tests | Shopware ${{ matrix.shopware }}, PHP ${{ matrix.php }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
