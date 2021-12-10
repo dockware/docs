@@ -2,6 +2,21 @@
 
 ## Latest News
 
+### 2021-12-10
+
+Since the launch of dockware it has not only been used for development, but also in CI/CD pipelines. The pre-installed Shopware version including demo data makes dockware a perfect companion for Cypress tests in the cloud and other nice things you can do.
+
+With this, we are launching a new [CI/CD section](broken-reference) in our documentation, where we collect examples and templates for the different platforms and how to use dockware for different uses cases.
+
+The first page with [Github and Cypress](ci-cd/github.md) is already available.
+
+{% hint style="info" %}
+Do you use dockware in any platform that is not yet listed?\
+Be part of the community and drop us a line in order to get your platform listed here as well! Thank you
+{% endhint %}
+
+
+
 ### 2021-12-06
 
 Now that we have rolled out guides on how to develop Apps for Shopware, there might be questions on how to create and view **log files across different systems**.
