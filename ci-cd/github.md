@@ -35,6 +35,18 @@ Once completed, we can install Cypress and start to **run the tests against our 
 
 If everything is done, we make sure to **always** download the logs and store those within our pipeline. By including the correct name of our shopware version from the matrix, we end up with a single ZIP file with logs and screenshots for all our Shopware versions.
 
+{% hint style="info" %}
+**Pro Tip:**\
+****\
+****If you want to see **all results** of all Shopware versions to detect patterns on problems in specific versions, then it might be a good thing to turn off "fail-fast" in the strategy.\
+The full pipeline will still go on and takes longer even if problems occur, but you'll be rewarded with full results in the end!\
+
+
+_strategy:_ &#x20;
+
+&#x20;       _fail-fast: false_
+{% endhint %}
+
 ```yaml
 name: CI Pipeline
 
