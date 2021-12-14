@@ -70,3 +70,39 @@ For example:&#x20;
 
 DEBUG\_REMOTE\_HOST=192.168.178.42
 {% endhint %}
+
+
+
+## Troubleshooting
+
+Here are a few things you can do, if its not yet working.
+
+#### 1. Is XDebug activated?
+
+See the startup output of your dockware container.\
+It should show an output for PHP which should also display an activated XDebug.
+
+```bash
+docker logs (container_name)
+```
+
+#### 2. PHP Storm / IDE Configuration
+
+Make sure that you have a correct mount configuration.\
+This means that the root of your project should match the set root of your container.\
+Also make sure that you have started the XDebug listener in PHPStorm for example.
+
+#### 3. Chrome Extension
+
+Do you have the correct chrome extension in the latest version installed?\
+(see link above)
+
+#### 4. Local PHP that blocks Port?
+
+Do you have a local PHP installation on your host machine that might block the required port 9000?\
+Make sure to kill this process. You can use the following snippet to find out if anything blocks your port.
+
+```bash
+lsof -i TCP:9000
+```
+
