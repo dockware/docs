@@ -47,7 +47,7 @@ This steps only required if you want to use the shopware version provided by you
 1. Make sure your host `src` directory is empty 
 2. Make sure the `volumes` are **commented out** in the `docker-compose.yml` 
 3. Start the container with `docker-compose up -d`
-4. Initially copy the dockware files to your host with: `docker cp shop:/var/www/html/. ./src`
+4. Initially copy the dockware files to your host with: `docker cp shopware:/var/www/html/. ./src`
 
 You should now have a "src" folder in your directory.\
 That folder contains the whole Shopware files, including .env and whatever is located in the DocRoot of Apache.
