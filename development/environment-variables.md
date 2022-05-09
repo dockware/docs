@@ -15,6 +15,7 @@ You will find the available variables for your image on the [Docker Hub](https:/
 | SHOPWARE | SW_CURRENCY      | not-set              | Switch to a different default currency for the system, like GBP. This will be used in the administration. |
 | COMPOSER | COMPOSER_VERSION | not-set              | Let's you switch between composer 1 and 2.                                                                |
 | BUILDING | BUILD_PLUGIN     |                      | If provided, the container will only build the provided plugin and immeditaly quit afterwards.            |
+| CI       | DOCKWARE_CI      | not-set              | If provided, the container will run in a non-blocking fashion, allowing for usage in CI environments.            |
 
 ### Users
 
