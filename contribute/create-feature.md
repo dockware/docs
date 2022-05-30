@@ -1,26 +1,26 @@
 # Create Feature
 
-t's finally time to create our new feature.  
-  
-dockware brings you a running Github version of Shopware 6.  
-Still, its not possible to always deliver the latest commit. There will be multiple new ones everyday on Github.  
-  
-We recommend pulling the latest version before you start a new feature.  
-Do this by pulling the "development" and the "platform" repository on your **host** machine.  
+t's finally time to create our new feature.
+
+dockware brings you a running GitHub version of Shopware 6.\
+Still, it's not possible to always deliver the latest commit. There will be multiple new ones everyday on GitHub.
+
+We recommend pulling the latest version before you start a new feature.\
+Do this by pulling the "development" and the "platform" repository on your **host** machine.\
 Open your terminal and navigate to the "src" folder.
 
 {% code title="ON HOST" %}
-```text
+```
 git pull
 cd platform && git pull
 ```
 {% endcode %}
 
-Great, we are up to date. Now just start a new feature branch that will be used for the pull request later on.
+Great, we are up-to-date. Now just start a new feature branch that will be used for the pull request later on.
 
 {% code title="ON HOST" %}
-```text
-git checkout -b my-new-feature origin/master
+```
+git checkout -b my-new-feature origin/trunk
 ```
 {% endcode %}
 
@@ -53,4 +53,3 @@ docker exec -it shopware bash -c './psh.phar install'
 {% endcode %}
 
 Open [http://localhost](http://localhost/) and your updated Shopware 6 should be back.
-

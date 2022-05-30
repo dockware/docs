@@ -1,6 +1,6 @@
 # Mailcatcher
 
-E-Mails are always a "special" challenge when speaking about setups :\) They should just work, they should not be sent out accidentally and you don't really want to configure anything just to explore Shopware 6, right?!
+E-Mails are always a "special" challenge when speaking about setups :) They should just work, they should not be sent out accidentally and you don't really want to configure anything just to explore Shopware 6, right?!
 
 Dockware has a built-in Mailcatcher installed. That one is already configured for E-Mails that are being sent out either through Shopware or directly with PHP.
 
@@ -10,15 +10,14 @@ Mailcatcher is a web application that acts as a mail server. The interesting thi
 
 
 
-Open Mailcatcher in your web browser with the following URL:  
-_/mailcatcher_  
-  
-Here you can see the Mailcatcher inbox.  
-As soon as emails are sent out, you see them right here!  
-  
-Please note, in case it's not auto-refreshing, just refresh the page manually.  
-  
-The Mailcatcher mail server settings can be found [here](https://dockware.io/docs#default-credentials)
+Open Mailcatcher in your web browser with the following URL:\
+_/mailcatcher_\
+__\
+__Here you can see the Mailcatcher inbox.\
+As soon as emails are sent out, you see them right here!\
+\
+Please note, in case it's not auto-refreshing, just refresh the page manually.\
+\
+The Mailcatcher mail server settings can be found [here](../use-dockware/default-credentials.md)
 
 ![](../.gitbook/assets/mailcatcher.png)
-

@@ -1,6 +1,6 @@
 # Dockware and other images
 
- **Can i use dockware in combination with other images?**
+**Can I use dockware in combination with other images?**
 
 Dockware is a Docker image like every other image. You can combine it with 3rd party services such as Redis, Elasticsearch, a separate MySQL, Percona or anything else.
 
@@ -13,7 +13,7 @@ Here's an example:
 version: "3"
 
 services:
-        
+
     shopware:
       image: dockware/play:latest
       container_name: shopware
@@ -21,7 +21,7 @@ services:
          - "80:80"
       networks:
          - web
-      
+
     db:
       image: mysql:5.7
       container_name: mysql
@@ -39,11 +39,18 @@ networks:
 ```
 {% endcode %}
 
-To access the standalone MySQL instance, use this connection string:
+To access the standalone MySQL instance you need to set the **correct host**.
 
-{% code title="IN DOCKER" %}
+{% hint style="info" %}
+The host is the **name of your container** (here -> "db")
+{% endhint %}
+
+Different systems have different options to configure a database connection string.\
+In Shopware 6, it would be inside the **.env** file as DATABASE\_URL.\
+In Shopware 5, it is in the **config.php** file.
+
+{% code title="SHOPWARE 6 (.env file inside docker)" %}
 ```yaml
-mysql://shopuser:secret@db:3306/shopware
+DATABASE_URL=mysql://shopuser:secret@db:3306/shopware
 ```
 {% endcode %}
-
