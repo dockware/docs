@@ -255,7 +255,7 @@ Additionally, you'll need a `traefik.toml` configuration file in the same direct
   defaultRule = "Host(`{{ trimPrefix `/` .Name }}.stage.yourdomain.invalid`)"
 
 [certificatesResolvers.le.acme]
-  email = "ssl@fbender.de"
+  email = "ssl@yourdomain.invalid"
   storage = "/etc/traefik/acme.json"
   [certificatesResolvers.le.acme.httpChallenge]
     entryPoint = "web"
@@ -276,7 +276,7 @@ Additionally, you'll need a `traefik.toml` configuration file in the same direct
 </details>
 
 {% hint style="warning" %}
-This configuration will expose the Traefik Dashboard publicly without authentication. You should [configure an authentication middleware](https://doc.traefik.io/traefik/middlewares/http/basicauth/) and add it. Also make sure to change the domains to your actual values.
+This configuration will expose the Traefik Dashboard publicly without authentication. You should [configure an authentication middleware](https://doc.traefik.io/traefik/middlewares/http/basicauth/) and add it. Also make sure to change the domains to your actual values, also the `email` property for the Let's Encrypt cert resolver.
 {% endhint %}
 
 Now, spinning up Traefik with `docker-compose up -d` should provide you with a running Traefik container.
