@@ -29,7 +29,7 @@ networks:
 Now start dockware with this command from the terminal with the directory that contains your yaml file as working directory:
 
 ```yaml
-docker-compose up -d
+docker compose up -d
 ```
 
 The option "-d" means "detached" and makes sure your container isn't quit when you close your terminal.\
