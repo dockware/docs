@@ -25,6 +25,7 @@
 * [Adminer](features/adminer.md)
 * [Mailcatcher](features/mailcatcher.md)
 * [Switch PHP Version](features/switch-php-version.md)
+* [Switch Node Version](features/switch-node-version.md)
 * [Tideways Profiling](features/tideways-profiling.md)
 * [Pimp my Log](features/pimp-my-log.md)
 * [Filebeat](features/filebeat.md)
