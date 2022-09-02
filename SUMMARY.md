@@ -88,7 +88,6 @@
 * [Shopware 5 Support](faq/shopware-5-support.md)
 * [Use Https/SSL](faq/use-https-ssl.md)
 * [Container hangs in Pipeline](faq/container-hangs-in-pipeline.md)
-* [Node v16 Problems](faq/node-v16-problems.md)
 
 ## Additional Links <a href="#additional" id="additional"></a>
 
