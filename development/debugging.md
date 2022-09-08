@@ -68,7 +68,7 @@ If you use docker on Windows with WSL2 you have to set your local ip address fro
 
 For example:&#x20;
 
-DEBUG\_REMOTE\_HOST=192.168.178.42
+XDEBUG\_REMOTE\_HOST=192.168.178.42
 {% endhint %}
 
 
