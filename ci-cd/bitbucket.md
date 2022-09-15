@@ -16,8 +16,6 @@ You can of course use those images in your build pipeline for whatever task you 
 
 To use dockware for your actions, just add a new step and provide any of the available dockware images. Then within your scripts, do whatever you want :)
 
-
-
 ```yaml
 image: dockware/flex:latest
 
