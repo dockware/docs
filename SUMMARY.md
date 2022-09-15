@@ -62,6 +62,7 @@
 
 * [Github](ci-cd/github.md)
 * [Gitlab](ci-cd/gitlab.md)
+* [Bitbucket](ci-cd/bitbucket.md)
 * [Buddy](ci-cd/buddy.md)
 
 ## Tips & Tricks
