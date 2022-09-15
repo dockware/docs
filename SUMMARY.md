@@ -61,6 +61,7 @@
 ## CI/CD
 
 * [Github](ci-cd/github.md)
+* [Gitlab](ci-cd/gitlab.md)
 * [Buddy](ci-cd/buddy.md)
 
 ## Tips & Tricks
