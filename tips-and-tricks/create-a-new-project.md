@@ -88,3 +88,22 @@ docker cp (containerName):/var/www/html/. ./src
 {% hint style="success" %}
 Congratulations, you have a fully local source code and database backup for your custom Shopware shop.
 {% endhint %}
+
+## 5. Restart Project
+
+Now to the fun part when restarting your project.\
+Just imagine if you start your containers again later on, you might have a source code available, but no database. This leads to problems.
+
+So depending on how you work, there are different approaches. \
+You can have your custom MySQL container that is persisted....or even persisted in dockware, all good. But what if you need to really restore our MySQL dump from above?\
+Just use this either manually, or in your project "run" script automatically.
+
+It will create a Shopware database and import your dump.
+
+```
+docker exec -i shopware bash -c "mysql -uroot -proot -e \"DROP DATABASE IF EXISTS shopware;\""
+docker exec -i shopware bash -c "mysql -uroot -proot -e \"create database shopware CHARACTER SET utf8 COLLATE utf8_general_ci;\""
+docker exec -i shopware mysql -uroot -proot shopware < ./database.sql
+```
+
+That's everything, you should now have your shop available again.
