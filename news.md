@@ -2,6 +2,32 @@
 
 ## Latest News
 
+### 2022-09-16 (Boostday + dockware-cli)
+
+It's been a while!\
+And yes, we have great news.
+
+There are a couple of things going on at the moment.\
+Today is the [Shopware Boost Day](https://ecommerce.shopware.com/boost-days) - and we are a part of it. This means we do our best to do some fancy dockware stuff today. And we would love you to join and help us. In the end it's a fun **Hackathon** for all of us.
+
+We have prepared some nice ideas for today on Github: [Boost Day Issues](https://github.com/dockware/dockware/issues?q=is%3Aissue+is%3Aopen+label%3ABoostday)
+
+\
+Now to something totally new. If you saw the [Shopware TV episodes with Christian](https://tv.shopware.com/en/series-overview/dev-initely/), you might have heard him promising to release a GO-based **dockware-cli** binary. That actually happened!\
+So right with todays Shopware Boost Day we are happy to release the new dockware-cli.
+
+What is it about? Our focus is still to keep the transparency on Docker, but add some nice features to it that might not fit somewhere else.&#x20;
+
+The first implemented idea is this experimental release, is the "**dockware creator**". It's an **interactive way** to build your docker-compose.yml files. So whether you want to develop plugins, PWA, Apps, with or without bind mount, etc., you'll end up with a nice and ready-to-use docker-compose.yml file.
+
+If you have other ideas, or just feedback on the dockware-cli, just drop us a line in Slack.\
+You can find the download links here: [https://dockware.io/cli](https://dockware.io/cli)
+
+Besides this, we're always trying to bring dockware a bit closer to the next steps.\
+Martin is completely restructuring the project to support better inheritance and reduced build and download times. Our SVRUnit tests have been automized to provide an even better coverage and way way more.
+
+Thank you for your great support and happy Boost Day.
+
 ### 2022-05-19
 
 We've been recently asked about multi-environment setups with dockware.\
