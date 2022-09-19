@@ -67,21 +67,23 @@ As already mentioned, we go with the first approach, to run the tests against a 
 
 This can be done in various ways.
 
-The most native and familiar one (if we face your current local setup) might be the [**Linux Virtual Machine action**](https://buddy.works/blog/introducing-linux-vm) in Buddy. This allows you to launch a plain Linux (Docker or Amazon Machine Image) and do whatever you want to do with it.
+The most familiar one (if we face your current local setup) might be the [**Docker CLI action**](https://buddy.works/docs/docker/docker-cli) in Buddy. This allows you to launch a plain Ubuntu with Docker and do whatever you want to do with it.
 
 A different approach might be to use [Additional Services](https://buddy.works/docs/pipelines/services/services-and-databases) next to your pipeline.&#x20;
 
-But for today we keep it as straight forward and flexible as possible and go with the Linux VM.
+But for today we keep it as straight forward and flexible as possible and go with the Docker CLI.
 
-Add a new action in Buddy and select the Linux VM.
+### Add Action
 
-![](../.gitbook/assets/Add\_a\_new\_action\_·\_Cypress\_in\_Buddy\_\_Plugin\_\_·\_Buddy\_Webinar\_\_Shopware\_6\_-2.png)
+Add a new action in Buddy and select the Docker CLI.
+
+<figure><img src="../.gitbook/assets/Add_new_action_·_CI_CD_Pipeline_·_Popular_·_buddy-webinar-2.png" alt=""><figcaption></figcaption></figure>
 
 Once created, open the **Run** tab.
 
 This gives you access to the simple text editor section, where you can add separate commands line per line.
 
-![](../.gitbook/assets/Screen\_Shot\_2022-02-23\_at\_00\_01\_32.png)
+<figure><img src="../.gitbook/assets/Screenshot_2022-09-19_at_22_55_19.png" alt=""><figcaption></figcaption></figure>
 
 The commands we add to this area will start by downloading the correct dockware version that we need. This can either be done statically, or through Buddy variables (or whatever you come up with).
 
@@ -97,13 +99,19 @@ All we have to do now is to upload the files into our container, and intall / bu
 
 Once completed, we can install Cypress and start to **run the tests against our domain** that we have just created for this pipeline. We use a separate Cypress image that has everything prepared. Please note that our host is already a Docker container, so you might get errors when trying to launch Cypress on your own (Error: spawn Xvfb ENOENT). So just use the [official Cypress images](https://hub.docker.com/r/cypress/included).
 
-To give the Cypress container access to your dockware container, just reuse the network of your hosting system (Linux VM).
+To give the Cypress container access to your dockware container, just reuse the network of your hosting system (Ubuntu VM).
 
 {% hint style="success" %}
 That's it, your Cypress tests should now run!
 {% endhint %}
 
+### Cache Docker Images
 
+To speed up your execution the next time your pipeline runs, we recommend attaching the cache driver to the VM. This will also cache the pulled docker images, so that they can be reused the next time this action runs.
+
+<figure><img src="../.gitbook/assets/Edit_action_·_CI_CD_Pipeline_·_buddy-webinar-2.png" alt=""><figcaption></figcaption></figure>
+
+### Full Script
 
 Here is the full script that you can use as a template for your custom setup.
 
@@ -120,10 +128,6 @@ docker exec shop bash -c "php bin/console plugin:install DockwareSamplePlugin --
 docker exec shop bash -c "php bin/console cache:clear"
 
 cd ./plugin/tests/Cypress 
-docker run --network host -v $PWD:/e2e -w /e2e -e CYPRESS_BASE_URL=http://localhost cypress/included:4.10.0
+docker run --network host -v $PWD:/e2e -w /e2e -e CYPRESS_BASE_URL=http://localhost cypress/included:10.8.0
 
 ```
-
-{% hint style="warning" %}
-If you get an error like "Passthrough is not supported, GL is swiftshader", then this is to Chrome inside the latest Cypress images. I think one need to change the image itself, or at least how Cypress is launched. I just used an older image which worked for me.
-{% endhint %}
