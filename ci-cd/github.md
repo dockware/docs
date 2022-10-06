@@ -130,3 +130,82 @@ jobs:
             Tests/Cypress/cypress/screenshots
             
 ```
+
+### Plugin Compatibility Checks
+
+If you are a plugin developer, you may need to **approve plugin versions for new Shopware versions**. This means you need to test all plugins versions in the latest Shopware version, right?
+
+Here's a pipeline that tests all your existing (hardcoded) plugin releases in a custom Shopware version.&#x20;
+
+The steps clone the plugin releases based on **Github Tags**. These tags are then used for the **matrix strategy**, and all use the same provided Shopware version.
+
+This should give you an idea on what is possible.&#x20;
+
+You can of course change the way how plugin versions are cloned, if you do not use tags, but something else in Github.
+
+```yaml
+name: Compatibility Pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      swVersion:
+        description: 'Shopware Version'
+        required: true
+      phpVersion:
+        description: 'PHP Version'
+        required: true
+        options:
+          - 7.4
+          - 8.0
+          - 8.1
+
+jobs:
+
+  e2e:
+    name: Plugin v${{ matrix.plugin }} | Shopware ${{ github.event.inputs.swVersion }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        plugin: [ '1.2', '1.1', '1.0' ]
+    steps:
+
+      - name: Clone Code
+        uses: actions/checkout@v2
+        with:
+          ref: refs/tags/v${{ matrix.plugin }}
+
+      - name: Download Docker
+        run: |
+          docker pull dockware/dev:${{ github.event.inputs.swVersion }}
+
+      - name: Upload into Docker
+        run: |
+          docker cp $(pwd)/. shop:/var/www/html/custom/plugins/MyPlugin
+          docker exec shop bash -c 'sudo chown www-data:www-data /var/www/html/custom/plugins -R'
+     
+      - name: Upload into Docker
+        run: |
+          docker cp $(pwd)/. shop:/var/www/html/custom/plugins/MyPlugin
+          docker exec shop bash -c 'sudo chown www-data:www-data /var/www/html/custom/plugins -R'
+
+      - name: Install and Build Artifacts
+        run: |
+          docker exec shop bash -c 'cd /var/www/html/custom/plugins/MyPlugin && make install -B'
+          docker exec shop bash -c 'cd /var/www/html/custom/plugins/MyPlugin && make build -B'
+    
+      - name: Install/Configure Plugin
+        run: |
+          docker exec shop bash -c 'php bin/console plugin:refresh'
+          docker exec shop bash -c 'php bin/console plugin:install MyPlugin --activate'
+          docker exec shop bash -c 'php bin/console system:config:set MyPlugin.config.MyKey ${{ secrets.MYKEY_TEST }}'
+          docker exec shop bash -c 'php bin/console cache:clear'
+
+      - name: Install Cypress
+        run: cd tests/Cypress && make install -B
+
+      - name: Start Cypress
+        run: cd tests/Cypress && CYPRESS_BASE_URL=http://local.shopware.shop CYPRESS_SHOPWARE=${{ github.event.inputs.swVersion }} ./node_modules/.bin/cypress run --headless
+        
+```
