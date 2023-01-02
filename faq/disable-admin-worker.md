@@ -1,7 +1,7 @@
 # Disable Shopware admin worker
 
 **It is not required to create custom Cron/Systemd tasks to replace the [shopware admin worker](https://docs.shopware.com/de/shopware-6-de/tutorials-und-faq/message-queue-und-scheduled-tasks).**<br>
-The image has Cron tasks included that can be [activated by flag](https://docs.dockware.io/features/environment-variables).
+The dockware image has Cron tasks included that can be [activated by flag](https://docs.dockware.io/features/environment-variables).
 
 ### 1. Create a Shopware config file
 E.g. `docker/sw-config/shopware.yaml`<br>
