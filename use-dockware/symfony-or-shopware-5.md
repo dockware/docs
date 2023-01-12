@@ -7,7 +7,7 @@ Still we heard the requests from the community and are now also providing limite
 **Run Shopware 5 with dockware**
 
 ```
-docker run --rm -p 80:80 dockware/play:5.6.7
+docker run --rm -p 80:80 dockware/play:5.7.14
 ```
 
 {% hint style="warning" %}
