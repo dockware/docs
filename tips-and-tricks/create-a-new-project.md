@@ -19,12 +19,14 @@ Let's use dockware/essentials, because we can immediately install everything wit
 We create a docker-compose, which need anyway sooner or later.
 
 ```yaml
-shop:
-  image: dockware/essentials:latest
-  container_name: shop
-  ports:
-    - "80:80"
-    - "3306:3306"
+version: '3'
+services:
+  shop:
+    image: dockware/essentials:latest
+    container_name: shop
+    ports:
+      - "80:80"
+      - "3306:3306"
 ```
 
 After the container has been started, we connect into it with our terminal.
