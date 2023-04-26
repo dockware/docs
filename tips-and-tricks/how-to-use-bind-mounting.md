@@ -54,7 +54,7 @@ rm -rf ...../vendor/*
 To continue using all your scripts and commands as usual, you have to set permissions on these folders after starting your container. **You can set these individually per folder, or just use this command and all is good:**
 
 ```bash
-docker exec -it shop bash -c 'sudo chown www-data:www-data /var/www/html -R"
+docker exec -it shop bash -c 'sudo chown www-data:www-data /var/www/html -R'
 ```
 
 {% hint style="success" %}
