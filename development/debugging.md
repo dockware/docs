@@ -59,16 +59,26 @@ Please see our section about [Environment Variables](../features/environment-var
 **XDEBUG and LINUX**\
 Both MAC and Windows have the Docker variable "host.docker.internal" as default value, which should work great as Loopback IP to automatically recognize the host IP.
 
-For Linux however this does not work! Please use **172.17.0.1** this as ENV variable to make it work!
+For Linux however this does not work! Please use **172.17.0.1** this as ENV variable to make it work!\
+\
+Here is a sample for a docker-compose.yml:
+
+```
+environment:
+    - XDEBUG_REMOTE_HOST=172.17.0.1
+```
 {% endhint %}
 
 {% hint style="warning" %}
 **XDEBUG and WSL2**\
 If you use docker on Windows with WSL2 you have to set your local ip address from the host in this env variable.
 
-For example:&#x20;
+Here is a sample for a docker-compose.yml:
 
-XDEBUG\_REMOTE\_HOST=192.168.178.42
+```
+environment:
+    - XDEBUG_REMOTE_HOST=192.168.178.42
+```
 {% endhint %}
 
 
