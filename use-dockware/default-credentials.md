@@ -1,10 +1,11 @@
 # Default Credentials
-- [Default Credentials](#default-credentials)
-    * [Shopware 6 Admin](#what-are-the-default-shopware-6-admin-credentials-)
-    * [dockware MySQL](#what-are-the-default-dockware-mysql-credentials-)
-    * [dockware SSH/SFTP](#what-are-the-default-dockware-ssh-sftp-credentials-)
-    * [dockware Mailcatcher](#what-are-the-default-dockware-mailcatcher-settings-)
-    * [Shopware 5 Backend](#what-are-the-default-shopware-5-backend-credentials-)
+
+* [Default Credentials](default-credentials.md#default-credentials)
+  * [Shopware 6 Admin](default-credentials.md#what-are-the-default-shopware-6-admin-credentials-)
+  * [dockware MySQL](default-credentials.md#what-are-the-default-dockware-mysql-credentials-)
+  * [dockware SSH/SFTP](default-credentials.md#what-are-the-default-dockware-ssh-sftp-credentials-)
+  * [dockware Mailcatcher](default-credentials.md#what-are-the-default-dockware-mailcatcher-settings-)
+  * [Shopware 5 Backend](default-credentials.md#what-are-the-default-shopware-5-backend-credentials-)
 
 ## What are the default Shopware 6 Admin credentials?
 
@@ -15,8 +16,11 @@ Password: **shopware**
 
 ## What are the default dockware MySQL credentials?
 
+These work for SQL clients as well as for the built-in Adminer application.
+
 User: **root**\
 Password: **root**\
+Host: **127.0.0.1** (not localhost)\
 Port: **3306**\
 \
 Please note, that you need to make the port available to your host machine.
