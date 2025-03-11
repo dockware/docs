@@ -7,7 +7,7 @@ Docker is routing based on the **domain** and **port** that you configure.\
 You can either use different ports for your shops or use a full reverse proxy to make it even easier to use it.
 
 {% hint style="info" %}
-This tutorial will use a NGINX proxy for the routing, but always remember, you can also just use different ports like "1000:80", "1001:80" for your containers, or things like [https://traefik.io/](https://traefik.io/)....
+In these tutorials we will use an NGINX proxy for the routing in the first part, and [Traefik](https://traefik.io/) for a second, but always remember, you can also just use different ports like "1000:80", "1001:80" for your containers, or any other reverse proxy.
 {% endhint %}
 
 ## Important to know
@@ -17,7 +17,7 @@ So maybe you want a single MySQL image for all shop databases, or an Elasticsear
 
 That is the part where dockware is nothing more than a super cool Docker image with everything installed that you need to run Shopware. In that case you might even want to go with a **dockware/essentials** or **dockware/flex**.
 
-The tutorial below will however focus on using the **dockware/dev** images that come with a full Shopware already installed. This means that we only need a single container for every shop that should be running. For a lot of people, this might be an easier approach, but still keep in mind - **only your creativity limits your setups**.
+The tutorials below will however focus on using either the **dockware/dev** or **dockware/play** images that come with a full Shopware already installed. This means that we only need a single container for every shop that should be running. For a lot of people, this might be an easier approach, but still keep in mind - **only your creativity limits your setups**.
 
 Both examples can be found in our[ example Github repository](https://github.com/dockware/examples):
 
@@ -28,7 +28,7 @@ Both examples can be found in our[ example Github repository](https://github.com
 
 
 
-## Example with dockware/dev
+## Example with dockware/dev and nginx
 
 ### 1. docker-compose.yml
 
@@ -190,5 +190,143 @@ Our Github example shows you how to do this automatically within a makefile :)
 If you want to see a more convenient plug'n'play way with our makefiles, head to this page for more: [https://github.com/dockware/examples/tree/master/multi-environments/dev](https://github.com/dockware/examples/tree/master/multi-environments/dev)
 {% endhint %}
 
+## Example with dockware/play and Traefik
+
+### 1. Prerequisites and Traefik configuration
+
+All the ins and outs of Traefik configuration are beyond the scope of this tutorial. We assume you have a dedicated host to deploy your setup on, which also is reachable from Let's Encrypt if you want to use TLS certificates. Additionally, you'd need to have a wildcard DNS record, meaning `*.stage.yourdomain.invalid` points towards the IP address of the host you're using.
+
+It's easy to use `docker-compose` to spin up a Traefik instance. Create a directory `traefik` wherever you'd like to collect your services (e.g. `~/services/traefik`), and create the following `docker-compose.yml`:
+
+<details>
+
+<summary>docker-compose.yml for a basic Traefik</summary>
+
+```ruby
+version: "3.7"
+
+services:
+  traefik:
+    image: traefik
+    container_name: traefik
+    restart: unless-stopped
+    volumes:
+      - ./traefik.toml:/etc/traefik/traefik.toml:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - default
+      - traefik
 
 
+networks:
+  traefik:
+    name: traefik
+```
+
+</details>
+
+Additionally, you'll need a `traefik.toml` configuration file in the same directory:
+
+<details>
+
+<summary>traefik.toml Traefik configuration file</summary>
+
+```
+[entryPoints.web]
+  address = ":80"
+
+[entryPoints.web.http.redirections.entryPoint]
+  to = "websecure"
+  scheme = "https"
+
+[entryPoints.websecure]
+  address = ":443"
+
+[api]
+  debug = true
+  dashboard = true
+
+[providers.docker]
+  exposedByDefault = false
+  network = "traefik"
+  defaultRule = "Host(`{{ trimPrefix `/` .Name }}.stage.yourdomain.invalid`)"
+
+[certificatesResolvers.le.acme]
+  email = "ssl@yourdomain.invalid"
+  storage = "/etc/traefik/acme.json"
+  [certificatesResolvers.le.acme.httpChallenge]
+    entryPoint = "web"
+
+[http.routers.api]
+  entryPoints = ["websecure"]
+  rule = "Host(`traefik.stage.yourdomain.invalid`)"
+  service = "api@internal"
+
+[http.routers.api.tls]
+  certResolver = "le"
+
+[http.middlewares.replace-to-root-path.replacepathregex]
+  regex = "^/[a-z]+/[0-9]+/(.*)"
+  replacement ="/$$1"
+```
+
+</details>
+
+{% hint style="warning" %}
+This configuration will expose the Traefik Dashboard publicly without authentication. You should [configure an authentication middleware](https://doc.traefik.io/traefik/middlewares/http/basicauth/) and add it. Also make sure to change the domains to your actual values, also the `email` property for the Let's Encrypt cert resolver.
+{% endhint %}
+
+Now, spinning up Traefik with `docker-compose up -d` should provide you with a running Traefik container.
+
+### 2. Add Dockware(s) through `docker-compose`
+
+For each Dockware instance you want to spin up, you'd need to create a service within a `docker-compose.yml`. You could use one for multiple, or one per shop, it's up to you. In this example, we created a file at `~/services/dockware/docker-compose.yml`. Simply make sure to add the correct labels to each instance:
+
+<details>
+
+<summary>docker-compose.yml for two Dockware instances and Traefik</summary>
+
+```ruby
+version: "3"
+services:
+        
+    shopware-alpha:
+      image: dockware/play:latest
+      container_name: shopware-alpha
+      networks:
+         - traefik
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.shopware-alpha.entrypoints=websecure"
+        - "traefik.http.routers.shopware-alpha.rule=Host(`alpha.stage.yourdomain.invalid`)"
+        - "traefik.http.routers.shopware-alpha.tls=true"
+        - "traefik.http.routers.shopware-alpha.tls.certresolver=le"
+        - "traefik.http.services.shopware-alpha.loadbalancer.server.port=80"
+
+    shopware-beta:
+      image: dockware/play:latest
+      container_name: shopware-beta
+      networks:
+         - traefik
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.shopware-beta.entrypoints=websecure"
+        - "traefik.http.routers.shopware-beta.rule=Host(`beta.stage.yourdomain.invalid`)"
+        - "traefik.http.routers.shopware-beta.tls=true"
+        - "traefik.http.routers.shopware-beta.tls.certresolver=le"
+        - "traefik.http.services.shopware-beta.loadbalancer.server.port=80"
+        
+networks:
+  traefik:
+    external:
+      name: traefik
+```
+
+</details>
+
+Again, make sure to change the domains to something that makes sense in your setup.
+
+Then you should be ready to fire up the two Dockware instances with `docker-compose up -d`. After a short while, `alpha.stage.yourdomain.invalid` and `beta.stage.yourdomain.invalid` should point to two independent Dockware instances.
