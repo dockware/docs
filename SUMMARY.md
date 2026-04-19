@@ -84,8 +84,6 @@
 
 ## Commercial
 
-***
-
 * [Shopware Services](commercial/shopware-services.md)
 
 ## About

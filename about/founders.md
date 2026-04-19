@@ -22,7 +22,7 @@ He still writes code in the core of Dockware today. He also runs [dasistweb](htt
 
 ### Christian Dangl
 
-**Core Contributor (v2)**
+**Founder, Core Contributor**
 
 Christian is a well-known name in the Shopware community. Conference speaker, PHP developer, and a solid contributor to Dockware v2. If you've opened an issue on GitHub in the last couple of years, there's a good chance you've talked to him.
 
