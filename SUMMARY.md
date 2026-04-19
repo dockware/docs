@@ -86,7 +86,7 @@
 
 ***
 
-* [Page 1](page-1.md)
+* [Shopware Services](commercial/shopware-services.md)
 
 ## About
 

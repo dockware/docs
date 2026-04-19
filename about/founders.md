@@ -1,20 +1,18 @@
 # Founders
 
-## Founders
-
-> Dockware is built and maintained by [dasistweb](https://www.dasistweb.de), a Shopware partner since 2012 (currently at Gold level) and co-developer of Shopware 6 since 2018. We've been shipping Shopware projects for 14+ years. Dockware is the dev setup we built for ourselves first, then for the community.
+> Dockware is built and maintained by [dasistweb](https://dasistweb.de), a Shopware partner since 2012 (currently at Gold level) and co-developer of Shopware 6 since 2018. We've been shipping Shopware projects for 14+ years. Dockware is the dev setup we built for ourselves first, then for the community.
 
 ***
 
-### The People Behind Dockware
+## The People Behind Dockware
 
-#### Martin Weinmayr
+### Martin Weinmayr
 
 **Founder, Developer, CEO of dasistweb GmbH**
 
 Martin wrote the first version of Dockware. He shaped the architecture and solved most of the hard problems along the way. The reason Dockware "just works" for so many Shopware devs is usually that Martin already had a strong opinion on how it should work, long before the first Docker image was pushed.
 
-He still writes code in the core of Dockware today. He also runs [dasistweb](https://www.dasistweb.de), the [Shopware agency](https://www.dasistweb.de/technologien/shopware) behind the project. Long-time Shopware developer, Shopware 6 co-developer since 2018.
+He still writes code in the core of Dockware today. He also runs [dasistweb](https://dasistweb.de), the [Shopware agency](https://dasistweb.de/technologien/shopware) behind the project. Long-time Shopware developer, Shopware 6 co-developer since 2018.
 
 * LinkedIn: [martin-weinmayr](https://www.linkedin.com/in/martin-weinmayr/)
 
@@ -22,7 +20,7 @@ He still writes code in the core of Dockware today. He also runs [dasistweb](htt
 
 ***
 
-#### Christian Dangl
+### Christian Dangl
 
 **Core Contributor (v2)**
 
@@ -33,7 +31,7 @@ Christian is a well-known name in the Shopware community. Conference speaker, PH
 
 ***
 
-### Why Dockware Exists
+## Why Dockware Exists
 
 Before Dockware, every new Shopware developer we onboarded lost two or three days on environment setup. Wrong PHP version, broken permissions, MySQL not talking to Elasticsearch, that one colleague's laptop where it "just works" for reasons nobody can explain.
 
@@ -43,35 +41,36 @@ Today Dockware is used by freelancers, agencies, and in-house dev teams across t
 
 ***
 
-### Built and Maintained by dasistweb
+## Built and Maintained by dasistweb
 
-Dockware is a product of the [**dasistweb GmbH**](https://www.dasistweb.de), based in Kolbermoor near Munich. We're a team of 25+ specialists, 80 percent on senior level, with an average team tenure of 6+ years.
+Dockware is a product of [**dasistweb GmbH**](https://dasistweb.de), based in Kolbermoor near Munich. We're a team of 25+ specialists, 80 percent on senior level, with an average team tenure of 6+ years.
 
-What we do at dasistweb:[https://www.dasistweb.de/leistungen/b2b-commerce](https://www.dasistweb.de/leistungen/b2b-commerce)
+**What we do at dasistweb:**
 
-* [E-commerce platforms](https://www.dasistweb.de/leistungen) on Shopware, Shopify and commercetools
-* [B2B Commerce](https://www.dasistweb.de/leistungen/b2b-commerce) with pricing logic, approval flows, and portals
-* [Replatforming & migration](https://www.dasistweb.de/leistungen/replatforming), including Shopware 5 to 6
-* [Custom plugin development](https://www.dasistweb.de/leistungen/plugin-entwicklung) for shops and providers
+* [E-commerce platforms](https://dasistweb.de/leistungen) on Shopware, Shopify and commercetools
+* [B2B Commerce](https://dasistweb.de/leistungen/b2b-commerce) with pricing logic, approval flows, and portals
+* [Replatforming & migration](https://dasistweb.de/leistungen/replatforming), including Shopware 5 to 6
+* [Custom plugin development](https://dasistweb.de/leistungen/plugin-entwicklung) for shops and providers
 * APIs, integrations, and data architecture behind it all
 
-Our Shopware track record:
+**Our Shopware track record:**
 
-* [Shopware partner](https://www.dasistweb.de/technologien/shopware) since 2012, worked our way up through every partnership tier, currently on Gold level
+* [Shopware partner](https://dasistweb.de/technologien/shopware) since 2012, worked our way up through every partnership tier, currently on Gold level
 * Shopware 6 co-developer since 2018
 * 56+ Shopware platform certifications
 * GMV range of our clients: 5 to 150 million EUR
 
-If you need help with a real Shopware setup, a migration, a custom integration, or a full rebuild: that's what we do every day. [Get in touch](https://www.dasistweb.de/kontakt).
+If you need help with a real Shopware setup, a migration, a custom integration, or a full rebuild: that's what we do every day. [Get in touch](https://dasistweb.de/kontakt).
 
 ***
 
-### Get in Touch
+## Get in Touch
 
 * **Bug or feature request:** open an [issue on GitHub](https://github.com/dockware)
+* **Community chat:** our [Slack channel](https://slack.com/app_redirect?channel=C014X8HE8U8)
 * **Docker images:** [hub.docker.com/u/dockware](https://hub.docker.com/u/dockware)
-* **Commercial Shopware help:** [dasistweb.de/kontakt](https://www.dasistweb.de/kontakt)
+* **Commercial Shopware help:** [dasistweb.de/kontakt](https://dasistweb.de/kontakt)
 
 ***
 
-_Dockware is free and open-source software, maintained by_ [_dasistweb GmbH_](https://www.dasistweb.de/ueber-uns/team)_, a_ [_Shopware agency_](https://www.dasistweb.de/technologien/shopware) _based in Kolbermoor, Germany. See the imprint for full legal details._
+_Dockware is free and open-source software, maintained by_ [_dasistweb GmbH_](https://dasistweb.de/ueber-uns/team)_, a_ [_Shopware agency_](https://dasistweb.de/technologien/shopware) _based in Kolbermoor, Germany._
