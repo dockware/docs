@@ -1,0 +1,9 @@
+# Which Image should I use?
+
+{% hint style="info" %}
+First of all, the [website](https://www.dockware.io) contains a **list of all images** with **short descriptions**. So we recommend reading this, to get a basic overview of what is available first.
+{% endhint %}
+
+## Pick your Topic
+
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Build Web Apps</strong></td><td>You want to build applications based on PHP and/or Node.js</td><td><a href="../tutorials/quick-start-tutorials/developing-web-apps.md">developing-web-apps.md</a></td></tr><tr><td><strong>Build Headless Systems</strong></td><td>You want to build a headless setup for Shopware, CMS systems and more</td><td><a href="../tutorials/quick-start-tutorials/developing-headless-systems.md">developing-headless-systems.md</a></td></tr><tr><td><strong>Build Shopware Plugins</strong></td><td>You want to create awesome Shopware Plugins</td><td><a href="../tutorials/quick-start-tutorials/developing-shopware-plugins.md">developing-shopware-plugins.md</a></td></tr><tr><td><strong>Build Shopware Apps</strong></td><td>You want to create Apps for Shopware with an easy local environment</td><td><a href="../tutorials/quick-start-tutorials/developing-shopware-apps.md">developing-shopware-apps.md</a></td></tr><tr><td><strong>Build Shopware Shops</strong></td><td>You want to create full Shopware shops as a merchant, freelancer or agency.</td><td><a href="../tutorials/quick-start-tutorials/developing-shopware-shops.md">developing-shopware-shops.md</a></td></tr><tr><td><strong>Explore Shopware</strong></td><td>You want to explore features of Shopware versions</td><td><a href="../tutorials/quick-start-tutorials/exploring-shopware.md">exploring-shopware.md</a></td></tr></tbody></table>

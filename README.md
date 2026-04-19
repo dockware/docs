@@ -1,32 +1,27 @@
----
-description: dockware, the fast and simple way to develop with shopware and symfony.
----
+# Docker Setup
 
-# dockware doc's
+## Installation on Mac
 
-Welcome to the dockware documentation!
+Start by downloading the latest version of **Docker Desktop** for MAC or **Orbstack** and install it on your system. We have really positive experiences with Orbstack, especially with performance when using bind mounts.&#x20;
 
-This is your knowledge base from installing docker, starting your first shopware on to developing plugins or even Shopware with dockware #contribution.
+* [https://orbstack.dev](https://orbstack.dev/)
+* [https://docs.docker.com/desktop/setup/install/mac-insta](https://docs.docker.com/desktop/setup/install/mac-install/)
 
-If you have anything that might be missing, don't hesitate to contact us. Thank You!
+## Installation on Linux
 
-**Where to find all information about dockware?**
+Start by downloading the latest version of Docker and install it on your system.
 
-{% hint style="info" %}
-All other information then the documentation can be found on [dockware.io](https://dockware.io)
-{% endhint %}
+* [Docker for CentOS](https://docs.docker.com/install/linux/docker-ce/centos/)
+* [Docker for Debian](https://docs.docker.com/install/linux/docker-ce/debian/)
+* [Docker for Fedora](https://docs.docker.com/install/linux/docker-ce/fedora/)
+* [Docker for Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
-**Where to get Support?**\
-If you have questions you can reach us in the shopware [community Slack](https://shopwarecommunity.slack.com/archives/C014X8HE8U8).
+You can find more about Docker [here](https://docs.docker.com/docker-for-windows/install/).
 
-**What to do with issues or Feature Requests?**\
-If you have a issue or a feature Request please create it on the official [dockware GitHub Repo](https://github.com/dockware/dockware).
+## Installation on Windows
 
-**What if i like to contribute to this documentation?**\
-That's super easy. Just make a Pull Request on our [documentation GitHub Repo](https://github.com/dockware/docs).
+Start by downloading the latest version of Docker Desktop for Windows and install it on your system.
 
-**dockware is helpful for you?**
+* [Download Docker for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)
 
-{% hint style="success" %}
-Then think about to sponsor it with [Github sponsoring](https://github.com/sponsors/dockware) 💜
-{% endhint %}
+You can find more about Docker for Windows [here](https://docs.docker.com/docker-for-windows/install/).

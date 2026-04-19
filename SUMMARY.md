@@ -1,100 +1,93 @@
 # Table of contents
 
-* [dockware doc's](README.md)
-* [News](news.md)
+## Getting Started
 
-## Setup
+* [Docker Setup](README.md)
+* [Which Image should I use?](getting-started/which-image-should-i-use.md)
 
-* [Docker Setup](setup/docker-setup.md)
-* [What Image should you use?](setup/what-image-should-you-use.md)
-* [Performance Tweaks](setup/performance-tweaks.md)
+## dockware/web
 
-## Use Dockware
+* [Getting Started](dockware-web/getting-started.md)
+* [Features](dockware-web/features.md)
+* [Customize Image](dockware-web/customize-image.md)
+* [Environment Variables](dockware-web/environment-variables.md)
+* [Default Credentials](dockware-web/default-credentials.md)
+* [Releases and Versions](dockware-web/releases-and-versions.md)
 
-* [First Run](use-dockware/first-run.md)
-* [Update Dockware](use-dockware/update-dockware.md)
-* [Advanced Run](use-dockware/advanced-run.md)
-* [Default Credentials](use-dockware/default-credentials.md)
-* [Symfony or Shopware 5](use-dockware/symfony-or-shopware-5.md)
-* [Changelog](use-dockware/changelog.md)
+## dockware/proxy
 
-## Features
+* [Getting Started](dockware-proxy/getting-started.md)
+* [Environment Variables](dockware-proxy/environment-variables.md)
+* [Versions and Releases](dockware-proxy/versions-and-releases.md)
 
-* [Intro](features/intro.md)
-* [Environment Variables](features/environment-variables.md)
-* [Adminer](features/adminer.md)
-* [Mailcatcher](features/mailcatcher.md)
-* [Switch PHP Version](features/switch-php-version.md)
-* [Switch Node Version](features/switch-node-version.md)
-* [Tideways Profiling](features/tideways-profiling.md)
-* [Pimp my Log](features/pimp-my-log.md)
-* [Filebeat](features/filebeat.md)
-* [SSH Users](features/ssh-users.md)
-* [MySQL Users](features/mysql-users.md)
-* [Shopware Currency](features/shopware-currency.md)
+## dockware/shopware
 
-## Development
+* [Getting Started](dockware-shopware/getting-started.md)
+* [Features](dockware-shopware/features.md)
+* [Watchers](dockware-shopware/watchers.md)
+* [Environment Variables](dockware-shopware/environment-variables.md)
+* [Default Credentials](dockware-shopware/default-credentials.md)
+* [Releases and Versions](dockware-shopware/releases-and-versions.md)
 
-* [Intro](development/intro.md)
-* [Start Developing](development/start-developing.md)
-* [Switch Branches](development/switch-branches.md)
-* [Debugging](development/debugging.md)
-* [Watchers](development/watchers.md)
-* [App Development](development/app-development.md)
-* [Update Shopware](development/update-shopware.md)
-* [Dockware Essentials](development/dockware-essentials.md)
-* [Custom Domains](development/custom-domains.md)
-* [Custom Images](development/custom-images.md)
-* [Code Coverage](development/code-coverage.md)
-* [CLI Build Shopware 6 Plugin](development/cli-build-shopware-6-plugin.md)
-* [Multi-Environment Setups](development/multi-environment-setups.md)
+## dockware/shopware-essentials
 
-## Contribute
+* [Getting Started](dockware-shopware-essentials/getting-started.md)
+* [Features](dockware-shopware-essentials/features.md)
+* [Watchers](dockware-shopware-essentials/watchers.md)
+* [Environment Variables](dockware-shopware-essentials/environment-variables.md)
+* [Default Credentials](dockware-shopware-essentials/default-credentials.md)
+* [Versions and Releases](dockware-shopware-essentials/versions-and-releases.md)
 
-* [Intro](contribute/intro.md)
-* [Setup Github Version](contribute/setup-github-version.md)
-* [Create Feature](contribute/create-feature.md)
-* [Code Styles](contribute/code-styles.md)
-* [Testing](contribute/testing.md)
-* [Create Pull Requests](contribute/create-pull-requests.md)
+## dockware/shopware-translations
 
-## CI/CD
+* [Getting Started](dockware-shopware-translations/getting-started.md)
+* [Versions and Releases](dockware-shopware-translations/versions-and-releases.md)
 
-* [Github](ci-cd/github.md)
-* [Gitlab](ci-cd/gitlab.md)
-* [Bitbucket](ci-cd/bitbucket.md)
-* [Buddy](ci-cd/buddy.md)
+## Tutorials
 
-## Tips & Tricks
+* [Quick Start Tutorials](tutorials/quick-start-tutorials/README.md)
+  * [Developing Web Apps](tutorials/quick-start-tutorials/developing-web-apps.md)
+  * [Developing Headless Systems](tutorials/quick-start-tutorials/developing-headless-systems.md)
+  * [Developing Shopware Shops](tutorials/quick-start-tutorials/developing-shopware-shops.md)
+  * [Developing Shopware Plugins](tutorials/quick-start-tutorials/developing-shopware-plugins.md)
+  * [Developing Shopware Apps](tutorials/quick-start-tutorials/developing-shopware-apps.md)
+  * [Exploring Shopware](tutorials/quick-start-tutorials/exploring-shopware.md)
+* [Docker Tutorials](tutorials/docker-tutorials/README.md)
+  * [Correct Bind-Mounting](tutorials/docker-tutorials/correct-bind-mounting.md)
+  * [Domains with HTTPS](tutorials/docker-tutorials/domains-with-https.md)
+  * [Setup Filebeat](tutorials/docker-tutorials/setup-filebeat.md)
+  * [Online Servers](tutorials/docker-tutorials/online-servers.md)
+  * [Security Approaches](tutorials/docker-tutorials/security-approaches.md)
+* [Shopware Tutorials](tutorials/shopware-tutorials/README.md)
+  * [Create new Shopware Project](tutorials/shopware-tutorials/create-new-shopware-project.md)
+  * [Custom Shop Domains](tutorials/shopware-tutorials/custom-shop-domains.md)
+  * [Shopware and MySQL](tutorials/shopware-tutorials/shopware-and-mysql.md)
+  * [Shopware and REDIS](tutorials/shopware-tutorials/shopware-and-redis.md)
+  * [Shopware and Elasticsearch](tutorials/shopware-tutorials/shopware-and-elasticsearch.md)
+  * [Import MySQL Dump](tutorials/shopware-tutorials/import-mysql-dump.md)
+  * [Disable the Admin Worker](tutorials/shopware-tutorials/disable-the-admin-worker.md)
+  * [Multi-Environment Setups](tutorials/shopware-tutorials/multi-environment-setups.md)
+* [CI/CD Tutorials](tutorials/ci-cd-tutorials/README.md)
+  * [Github](tutorials/ci-cd-tutorials/github.md)
+  * [Gitlab](tutorials/ci-cd-tutorials/gitlab.md)
+  * [Bitbucket](tutorials/ci-cd-tutorials/bitbucket.md)
+  * [Buddy](tutorials/ci-cd-tutorials/buddy.md)
 
-* [Create a new Project](tips-and-tricks/create-a-new-project.md)
-* [Bind-Mounting](tips-and-tricks/how-to-use-bind-mounting.md)
-* [Persisting Data](tips-and-tricks/persisting-data.md)
-* [Housekeeping](tips-and-tricks/housekeeping.md)
-* [Online Servers](tips-and-tricks/online-servers.md)
-* [Performance on Mac](tips-and-tricks/performance-on-mac.md)
-* [Security](tips-and-tricks/security.md)
+## Troubleshooting
 
-## FAQ
+* [Error Port not available](troubleshooting/error-port-not-available.md)
+* [Xdebug not working](troubleshooting/xdebug-not-working.md)
+* [Troubles in Chrome](troubleshooting/troubles-in-chrome.md)
+* [Container hangs in Pipeline](troubleshooting/container-hangs-in-pipeline.md)
+* [Troubles on Windows](troubleshooting/troubles-on-windows.md)
+* [Shopware Version not found](troubleshooting/shopware-version-not-found.md)
 
-* [Sequel Pro](faq/sequel-pro.md)
-* [Dockware and other images](faq/dockware-and-other-images.md)
-* [Scripts (PSH?)](faq/scripts.md)
-* [Redis](faq/redis.md)
-* [Error Port not available](faq/error-port-not-available.md)
-* [MySQL failed](faq/mysql-failed.md)
-* [Elasticsearch](faq/elasticsearch.md)
-* [Windows Problems](faq/windows-problems.md)
-* [Chrome Problems](faq/chrome-problems.md)
-* [Import MySQL Dump](faq/import-mysql-dump.md)
-* [Shopware 5 Support](faq/shopware-5-support.md)
-* [Use Https/SSL](faq/use-https-ssl.md)
-* [Container hangs in Pipeline](faq/container-hangs-in-pipeline.md)
-* [Disable the admin worker](faq/disable-the-admin-worker.md)
+## Commercial
 
-## Additional Links <a href="#additional" id="additional"></a>
+***
 
-* [Imprint](https://www.dasistweb.de/en/imprint)
-* [Founders](additional/founders.md)
-* [Dockware website](https://dockware.io/)
-* [Dockware in Shopware Slack](https://shopwarecommunity.slack.com/archives/C014X8HE8U8)
+* [Page 1](page-1.md)
+
+## About
+
+* [Founders](about/founders.md)
